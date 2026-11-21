@@ -11,7 +11,10 @@ function validate(policy,env=process.env){
  return policy;
 }
 function deploymentOrigin(policy,pageUrl){
- if(pageUrl!==ORIGIN||policy.origin!==ORIGIN)throw Error('Pages deployment does not identify the isolated Cloudflare custom origin');
+ let u;try{u=new URL(pageUrl);}catch{throw Error('Invalid Pages deployment metadata');}
+ // Like production-verification-url.cjs: GitHub may report HTTP in deployment
+ // metadata. Never request it; readback is always the fixed HTTPS origin.
+ if(policy.origin!==ORIGIN||!['http:','https:'].includes(u.protocol)||u.hostname!=='prv-qualification.chasingmajors.com'||u.port||u.username||u.password||u.pathname!=='/'||u.search||u.hash)throw Error('Pages deployment does not identify the isolated Cloudflare custom origin');
  return ORIGIN;
 }
 function writeCname(root,policy){
