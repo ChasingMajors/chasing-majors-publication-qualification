@@ -1,0 +1,11 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),tool=require('../scripts/kaws-source-fact.cjs');
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p)));
+const source=read('data/prv-calculations/kaws-2026.json'),claim=read('tests/fixtures/kaws-claim.json'),assessment=read('tests/fixtures/kaws-assessment.json');
+const policy={source_sha:'566a814da428cafb1948bb81418a72977e7f4a73',claim_sha256:tool.sha(claim),assessment_sha256:tool.sha(assessment)};
+test('real official fact produces a scoped offline plan, never publication authorization',()=>{const p=tool.plan(source,claim,assessment,policy);assert.equal(p.result,'PLANNED');assert.equal(p.path,'data/prv-calculations/kaws-2026.json');assert.equal(p.numeric_changes,0);assert.equal(p.publication_authorized,false);assert.equal(p.production_write_enabled,false);const a=structuredClone(p.after);delete a.sources.official_fact_receipts;assert.deepEqual(a,source);});
+test('actual legacy calculator row values and all numeric results remain unchanged',()=>{const calculate=require(path.join(root,'scripts/calculate-prv-odds.cjs')).calculate;const p=tool.plan(source,claim,assessment,policy);assert.deepEqual(calculate(p.after).rows,calculate(source).rows);});
+test('replay is a true metadata NOOP',()=>{const p=tool.plan(source,claim,assessment,policy);const second=tool.plan(p.after,claim,assessment,policy);assert.equal(second.result,'NOOP');assert.equal(second.before_sha256,second.after_sha256);});
+for(const [name,change]of [['product',s=>s.code='other'],['changed odds',s=>s.odds_rows.find(r=>r.odds_label==='26TNKB - BASE CARDS ORANGE PARALLEL').odds_denominator=39],['source hash',s=>s.sources.odds_sha256='0'.repeat(64)]])test('reject '+name,()=>{const s=structuredClone(source);change(s);assert.throws(()=>tool.plan(s,claim,assessment,policy));});
+test('a confidence label cannot replace independently pinned receipts',()=>{const a={...assessment,state:'Provisional'};assert.throws(()=>tool.plan(source,claim,a,policy));});
+test('preexisting conflicting metadata is held',()=>{const s=structuredClone(source);s.sources.official_fact_receipts={orange_pack_odds:{value:'1:39'}};assert.throws(()=>tool.plan(s,claim,assessment,policy),/Conflicting/);});

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Checklist Vault • Chasing Majors</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/shared/reference.css?v=1">
+
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("cm_theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      } catch (e) {}
+
+      var showOverlay = false;
+
+      try {
+        var params = new URLSearchParams(location.search);
+        var urlQ = (params.get("q") || "").trim();
+        var savedQuery = sessionStorage.getItem("cm_home_search") || "";
+        var savedTarget = sessionStorage.getItem("cm_home_target") || "";
+        var handoff = sessionStorage.getItem("cm_handoff_active") || "";
+        var incoming = urlQ || savedQuery;
+
+        if (handoff === "1" && incoming && (!savedTarget || savedTarget === "checklists" || urlQ)) {
+          showOverlay = true;
+        }
+      } catch (e) {}
+
+      window.__CM_SHOW_BOOT_OVERLAY__ = showOverlay;
+
+      if (showOverlay) {
+        document.documentElement.classList.add("cm-handoff-loading-html");
+        document.addEventListener("DOMContentLoaded", function () {
+          document.body.classList.add("cm-handoff-loading");
+        });
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <nav class="siteNav" aria-label="Primary">
+    <a class="brand" href="/">Chasing Majors</a>
+    <a href="/">Search</a>
+    <a href="/checklists/" aria-current="page">Checklists</a>
+    <a href="/vault/">Print Runs</a>
+    <a href="/schedule/">Releases</a>
+    <a href="/ChatBot/">Assistant</a>
+    <a href="https://chasingmajors.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+  </nav>
+
+  <div id="cmBootOverlay" class="cmBootOverlay" aria-hidden="true">
+    <div class="cmBootOverlayInner">
+      <h1 class="cmBootOverlayTitle">Chasing Majors</h1>
+      <div class="cmBootOverlaySub">Searching the Vault…</div>
+      <div class="cmBootOverlaySpinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <main class="content">
+    <section>
+      <div class="headerRow">
+        <h1 class="appTitle">Checklist Vault</h1>
+
+        <div class="topRight">
+          <button class="iconBtn" id="themeToggle" aria-label="Toggle theme">
+            <svg class="icon" viewBox="0 0 24 24" id="themeIcon">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="card searchCard">
+        <div class="heroText">Searchable Checklist &amp; Player Data.</div>
+
+        <div class="sportRow">
+          <div class="sportWrap">
+            <label for="sport">Sport</label>
+            <select id="sport">
+              <option value="all" selected>All Sports</option>
+              <option value="baseball">Baseball</option>
+              <option value="basketball">Basketball</option>
+              <option value="football">Football</option>
+              <option value="hockey">Hockey</option>
+              <option value="soccer">Soccer</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="sportHint" class="searchNotice" role="status" aria-live="polite" hidden></div>
+        <div id="allSportsWarning" class="searchNotice searchNotice--warn" role="status" aria-live="polite" hidden></div>
+
+        <div class="searchWrap">
+          <svg class="searchIcon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16.8 16.8 21 21"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+
+          <input aria-label="Search checklists and players" id="q" placeholder="Let's search something" autocomplete="off" />
+          <div id="dropdown" class="dropdown"></div>
+        </div>
+
+        <div class="searchActions">
+        <button class="primary" id="btnSearch" type="button">Search</button>
+        <button class="clearBtn" id="btnClear" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="resultsWrap">
+        <div class="list" id="results">
+          <div class="card" style="opacity:.8;">No results yet. Run a search.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    (function () {
+      if (window.__CM_SHOW_BOOT_OVERLAY__) {
+        var el = document.getElementById("cmBootOverlay");
+        if (el) el.classList.add("show");
+      }
+    })();
+  </script>
+
+  <script src="/shared/vendor/fflate-0.8.2.js"></script>
+  <script src="/shared/search-json.js?v=bounded-1"></script>
+  <script src="/shared/bounded-search.js?v=bounded-1"></script>
+  <script src="/checklists/app.js?v=bounded-1"></script>
+</body>
+</html>

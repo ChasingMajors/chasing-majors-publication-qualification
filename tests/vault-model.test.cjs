@@ -1,0 +1,65 @@
+const {test} = require('node:test');
+const assert = require('node:assert/strict');
+const model = require('../shared/vault-model.js');
+test('average and serial are independent; raw evidence survives',()=>{
+ const raw={printRun:31,serial:'/50',notes:'Checklist average reaching packs',setType:'Auto',setLine:'Gold',cmURL:'https://example.com/source'};
+ const r=model.row(raw,'product',1);
+ assert.equal(r.measurement.kind,'average'); assert.equal(r.serial_limit,50); assert.deepEqual(r.raw,raw);
+});
+test('bounds and estimates are not exact counts',()=>{
+ for(const [notes,kind] of [['at least 500','lower_bound'],['maximum 500','upper_bound'],['inferred from effective odds','estimate'],['','reported']]) assert.equal(model.row({printRun:500,notes},'p',1).measurement.kind,kind);
+ assert.equal(model.number(''),null);
+});
+test('untrusted URLs and malformed labels cannot become links/categories',()=>{
+ const r=model.row({cmURL:'javascript:alert(1)',setType:'Total Production: 322,400 Cards'},'p',1);
+ assert.equal(r.source.url,''); assert.equal(r.category,'Other'); assert.equal(r.issues.length,2);
+});
+test('duplicate rows are preserved with unique record identities',()=>{
+ const raw={setType:'Base',setLine:'Refractor',printRun:500};
+ const p=model.product({rows:[raw,raw]},'p'); assert.equal(p.rows.length,2); assert.notEqual(p.rows[0].id,p.rows[1].id);
+});
+test('nominal serial labels stay distinct from average availability',()=>{
+ const r=model.row({setLine:'Dual Auto Black (/50)',printRun:31,notes:'Estimated average copies across the checklist'},'p',1);
+ assert.equal(r.serial_limit,50); assert.equal(r.measurement.value,31); assert.equal(r.measurement.kind,'average');
+});
+test('all current product records survive the read-model conversion',()=>{
+ const fs=require('node:fs');
+ const index=JSON.parse(fs.readFileSync('data/v1/vault/index.json')).index;
+ const bundle=JSON.parse(fs.readFileSync('data/v1/vault/products/all.json'));
+ const shards={}; let total=0;
+ for(const entry of index){
+  const file=bundle.product_map?.[entry.Code];
+  const source=bundle.products?.[entry.Code] || (shards[file] ||= JSON.parse(fs.readFileSync('data/v1/vault/products/'+file))).products[entry.Code];
+  const converted=model.product(source,entry.Code);
+  assert.equal(converted.rows.length,source.rows.length);
+  converted.rows.forEach((r,i)=>assert.deepEqual(r.raw,source.rows[i]));
+  assert.equal(new Set(converted.rows.map(r=>r.id)).size,source.rows.length);
+  total+=source.rows.length;
+ }
+ assert.ok(total>0,'Current source contains records; preservation checks above apply to every row regardless of catalog size.');
+});
+
+test('conflicting legacy counts remain separate and are flagged for review',()=>{
+ const p=model.product({rows:[{setType:'Base',setLine:'Base',printRun:500},{setType:'Base',setLine:'Base',printRun:600}]},'p');
+ assert.equal(p.rows.length,2); assert.ok(p.rows.every(r=>r.issues.includes('Conflicting counts for matching labels')));
+});
+
+test('catalog serial limits normalize exact forms and preserve ambiguous ceilings',()=>{
+ for(const [value,expected] of [['/99',99],['99',99],['#/99',99],['/1,999',1999],['1/1',1],['1 of 1',1],['one-of-one',1],[' / 25 ',25]]) assert.equal(model.serialNumber(value),expected,value);
+ for(const value of ['',0,'/0','/2.5','/199 or less','/Various','23/99','1:99','-1','9999999999999999999999'])assert.equal(model.serialNumber(value),null,String(value));
+ const raw={setType:'Auto',setLine:'Padparadscha',serial:'1/1',printRun:0.7,notes:'Estimated average'};
+ const row=model.row(raw,'p',1);assert.equal(row.serial_limit,1);assert.equal(row.measurement.value,0.7);assert.equal(row.measurement.kind,'average');assert.deepEqual(row.raw,raw);
+});
+test('conflicting explicit serial labels are flagged without rewriting source data',()=>{
+ const r=model.row({serial:'/50',setLine:'Gold (/25)'},'p',1);
+ assert.equal(r.serial_limit,50);assert(r.issues.includes('Serial field and label disagree'));
+});
+
+test('separate source parallel descriptors distinguish labels without changing measurements',()=>{
+ const raw={setType:'Base',setLine:'Base',parallel:'Aqua Holo Foil',printRun:200,serial:'',subSetSize:300};
+ const r=model.row(raw,'p',1);
+ assert.equal(r.set_name,'Base — Aqua Holo Foil');assert.equal(r.measurement.value,200);assert.equal(r.serial_limit,null);assert.equal(r.checklist_size,300);assert.deepEqual(r.raw,raw);
+ assert.equal(model.row({...raw,setLine:'Base — Aqua Holo Foil'},'p',2).set_name,'Base — Aqua Holo Foil');
+ const p=model.product({rows:[raw,{...raw,parallel:'Blackout',printRun:6340}]},'p');
+ assert.ok(p.rows.every(r=>!r.issues.includes('Conflicting counts for matching labels')));
+});

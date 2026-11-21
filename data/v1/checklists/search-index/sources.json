@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "kind": "checklist_search_source_registry",
+  "generated_at": "2026-06-02T22:59:27.547Z",
+  "sources": {
+    "baseball": [
+      {
+        "source_key": "1950s",
+        "path": "sources/baseball-1950s.json",
+        "generated_at": "2026-05-07T14:40:06.833Z"
+      },
+      {
+        "source_key": "2016",
+        "path": "sources/baseball-2016.json",
+        "generated_at": "2026-05-07T15:10:48.856Z"
+      },
+      {
+        "source_key": "2017",
+        "path": "sources/baseball-2017.json",
+        "generated_at": "2026-05-07T16:42:58.846Z"
+      },
+      {
+        "source_key": "2018",
+        "path": "sources/baseball-2018.json",
+        "generated_at": "2026-05-07T16:51:49.878Z"
+      },
+      {
+        "source_key": "2019",
+        "path": "sources/baseball-2019.json",
+        "generated_at": "2026-05-09T16:15:18.974Z"
+      },
+      {
+        "source_key": "2020",
+        "path": "sources/baseball-2020.json",
+        "generated_at": "2026-05-09T12:44:45.048Z"
+      },
+      {
+        "source_key": "2021",
+        "path": "sources/baseball-2021.json",
+        "generated_at": "2026-05-09T13:35:29.056Z"
+      },
+      {
+        "source_key": "2022",
+        "path": "sources/baseball-2022.json",
+        "generated_at": "2026-05-07T16:58:41.983Z"
+      },
+      {
+        "source_key": "2023",
+        "path": "sources/baseball-2023.json",
+        "generated_at": "2026-05-07T17:07:43.052Z"
+      },
+      {
+        "source_key": "2024",
+        "path": "sources/baseball-2024.json",
+        "generated_at": "2026-05-07T17:32:53.180Z"
+      },
+      {
+        "source_key": "2025",
+        "path": "sources/baseball-2025.json",
+        "generated_at": "2026-06-02T22:59:27.547Z"
+      }
+    ],
+    "football": [
+      {
+        "source_key": "2023",
+        "path": "sources/football-2023.json",
+        "generated_at": "2026-05-10T14:10:35.015Z"
+      },
+      {
+        "source_key": "2024",
+        "path": "sources/football-2024.json",
+        "generated_at": "2026-05-10T14:07:23.285Z"
+      },
+      {
+        "source_key": "2025",
+        "path": "sources/football-2025.json",
+        "generated_at": "2026-05-20T00:00:43.472Z"
+      }
+    ],
+    "basketball": [
+      {
+        "source_key": "2023-24",
+        "path": "sources/basketball-2023-24.json",
+        "generated_at": "2026-05-10T14:53:28.020Z"
+      }
+    ]
+  }
+}

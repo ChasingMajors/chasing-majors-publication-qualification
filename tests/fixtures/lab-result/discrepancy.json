@@ -1,0 +1,410 @@
+{
+  "historical_lab": {
+    "project_id": "prl_b1926b31-f6a0-4824-a12c-21d83edc5bbb",
+    "revision_id": "354eb262-3c08-4fe0-97f7-524a5047a1e2",
+    "engine": {
+      "version": "weighted-median-v1",
+      "engine_sha256": "302906af7c7b6140e8eb6e6ea340b2a642c8ca5077a3d2fb73869caa2366bf8d"
+    },
+    "pack_totals": [
+      81490
+    ],
+    "snapshot_sha256": "dfe5e7d9661985ac985c327f987df01d6a9de43f31422a5790d93a8c11b1d2e1",
+    "ordinary_auto": {
+      "id": "bs23-chrome-prospects-auto",
+      "name": "CHROME PROSPECTS AUTO",
+      "familyId": "bs23-autographs",
+      "odds": [
+        "1:14"
+      ],
+      "eligible": null,
+      "serial": 199,
+      "anchor": true,
+      "page": 1,
+      "ambiguous": false,
+      "weight": 0.1,
+      "weightNote": "Unconfirmed owner-sheet value: relative weight 0.1 versus autograph default 1 and base default 10. Not tuned to calibration output.",
+      "serialSource": "Owner sheet gid=0, SN cell C12: 199 is unconfirmed; Topps NumberedTo is blank. Not Topps-confirmed numbering.",
+      "serialSourceUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRzcDbPOA5TPHTEKG5WiMBIdDH0S4czkO_HVQj44cUHy_F56tWkEvcAgY2uaIRren3Vv8DKWKvZqpUc/pub?output=csv&gid=0",
+      "referenceBoxOdds": [
+        "1:2"
+      ]
+    }
+  },
+  "legacy_prv": {
+    "method": "numbered_parallel_pack_anchor_v1",
+    "packs": 82500,
+    "anchors": [
+      {
+        "id": "bs23-base-cards-aqua-sapphire",
+        "label": "BASE CARDS AQUA SAPPHIRE",
+        "subjects": 150,
+        "serial_limit": 55,
+        "odds_denominator": 10,
+        "implied_packs": 82500
+      },
+      {
+        "id": "bs23-base-cards-green-sapphire",
+        "label": "BASE CARDS GREEN SAPPHIRE",
+        "subjects": 150,
+        "serial_limit": 60,
+        "odds_denominator": 9,
+        "implied_packs": 81000
+      },
+      {
+        "id": "bs23-base-cards-orange-sapphire",
+        "label": "BASE CARDS ORANGE SAPPHIRE",
+        "subjects": 150,
+        "serial_limit": 50,
+        "odds_denominator": 11,
+        "implied_packs": 82500
+      },
+      {
+        "id": "bs23-base-cards-purple-sapphire",
+        "label": "BASE CARDS PURPLE SAPPHIRE",
+        "subjects": 150,
+        "serial_limit": 25,
+        "odds_denominator": 22,
+        "implied_packs": 82500
+      },
+      {
+        "id": "bs23-base-cards-red-sapphire",
+        "label": "BASE CARDS RED SAPPHIRE",
+        "subjects": 150,
+        "serial_limit": 10,
+        "odds_denominator": 54,
+        "implied_packs": 81000
+      }
+    ],
+    "rounded_auto": 205,
+    "round_to": 5
+  },
+  "current_lab_ablation": {
+    "engine_sha256": "6cdac98700c0f07d479532729a9515fe4e59f157e237570bd628c731aece3709",
+    "official_only_packs": [
+      81780
+    ],
+    "with_unconfirmed_199_weight_0_1": [
+      81490
+    ],
+    "five_base_serial_gt_1_packs": [
+      82500
+    ],
+    "diagnostics": [
+      {
+        "id": "o0",
+        "name": "BASE CARDS AQUA SAPPHIRE",
+        "count": 150,
+        "serial": 55,
+        "total": 8250,
+        "rates": [
+          0.1
+        ],
+        "kind": "Base",
+        "defaultWeight": 10,
+        "source": "section",
+        "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+        "weight": 10,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 10,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 10,
+        "downweighted": false,
+        "predicted": 8178,
+        "error": 0.008727272727272728,
+        "impliedEligible": 148.6909090909091,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o1",
+        "name": "BASE CARDS GREEN SAPPHIRE",
+        "count": 150,
+        "serial": 60,
+        "total": 9000,
+        "rates": [
+          0.1111111111111111
+        ],
+        "kind": "Base",
+        "defaultWeight": 10,
+        "source": "section",
+        "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+        "weight": 10,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 10,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 10,
+        "downweighted": false,
+        "predicted": 9086.666666666666,
+        "error": 0.009629629629629563,
+        "impliedEligible": 151.44444444444443,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o2",
+        "name": "BASE CARDS ORANGE SAPPHIRE",
+        "count": 150,
+        "serial": 50,
+        "total": 7500,
+        "rates": [
+          0.09090909090909091
+        ],
+        "kind": "Base",
+        "defaultWeight": 10,
+        "source": "section",
+        "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+        "weight": 10,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 10,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 10,
+        "downweighted": false,
+        "predicted": 7434.545454545455,
+        "error": 0.008727272727272672,
+        "impliedEligible": 148.6909090909091,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o3",
+        "name": "BASE CARDS PURPLE SAPPHIRE",
+        "count": 150,
+        "serial": 25,
+        "total": 3750,
+        "rates": [
+          0.045454545454545456
+        ],
+        "kind": "Base",
+        "defaultWeight": 10,
+        "source": "section",
+        "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+        "weight": 10,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 10,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 10,
+        "downweighted": false,
+        "predicted": 3717.2727272727275,
+        "error": 0.008727272727272672,
+        "impliedEligible": 148.6909090909091,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o4",
+        "name": "BASE CARDS RED SAPPHIRE",
+        "count": 150,
+        "serial": 10,
+        "total": 1500,
+        "rates": [
+          0.018518518518518517
+        ],
+        "kind": "Base",
+        "defaultWeight": 10,
+        "source": "section",
+        "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+        "weight": 10,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 10,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 10,
+        "downweighted": false,
+        "predicted": 1514.4444444444443,
+        "error": 0.009629629629629563,
+        "impliedEligible": 151.44444444444443,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o5",
+        "name": "BASE CARDS PADPARADSCHA SAPPHIRE",
+        "count": 150,
+        "serial": 1,
+        "total": 150,
+        "rates": [
+          0.0019011406844106464
+        ],
+        "kind": "Base",
+        "defaultWeight": 10,
+        "source": "section",
+        "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+        "weight": 10,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 10,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 10,
+        "downweighted": false,
+        "predicted": 155.47528517110266,
+        "error": 0.03650190114068437,
+        "impliedEligible": 155.47528517110266,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o7",
+        "name": "CHROME PROSPECTS AUTO AQUA SAPPHIRE",
+        "count": 29,
+        "serial": 99,
+        "total": 2871,
+        "rates": [
+          0.018867924528301886
+        ],
+        "kind": "Autograph / memorabilia",
+        "defaultWeight": 1,
+        "source": "section",
+        "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+        "weight": 1,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 1,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 1,
+        "downweighted": false,
+        "predicted": 1543.0188679245282,
+        "error": 0.46255002858776445,
+        "impliedEligible": 15.58604917095483,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o8",
+        "name": "CHROME PROSPECTS AUTO GREEN SAPPHIRE",
+        "count": 29,
+        "serial": 50,
+        "total": 1450,
+        "rates": [
+          0.017543859649122806
+        ],
+        "kind": "Autograph / memorabilia",
+        "defaultWeight": 1,
+        "source": "section",
+        "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+        "weight": 1,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 1,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 1,
+        "downweighted": false,
+        "predicted": 1434.7368421052631,
+        "error": 0.010526315789473708,
+        "impliedEligible": 28.69473684210526,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o9",
+        "name": "CHROME PROSPECTS AUTO ORANGE SAPPHIRE",
+        "count": 29,
+        "serial": 25,
+        "total": 725,
+        "rates": [
+          0.008928571428571428
+        ],
+        "kind": "Autograph / memorabilia",
+        "defaultWeight": 1,
+        "source": "section",
+        "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+        "weight": 1,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 1,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 1,
+        "downweighted": false,
+        "predicted": 730.1785714285714,
+        "error": 0.007142857142857165,
+        "impliedEligible": 29.20714285714286,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o10",
+        "name": "CHROME PROSPECTS AUTO PURPLE SAPPHIRE",
+        "count": 29,
+        "serial": 10,
+        "total": 290,
+        "rates": [
+          0.0035842293906810036
+        ],
+        "kind": "Autograph / memorabilia",
+        "defaultWeight": 1,
+        "source": "section",
+        "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+        "weight": 1,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 1,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 1,
+        "downweighted": false,
+        "predicted": 293.1182795698925,
+        "error": 0.010752688172043032,
+        "impliedEligible": 29.311827956989248,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o11",
+        "name": "CHROME PROSPECTS AUTO RED SAPPHIRE",
+        "count": 29,
+        "serial": 5,
+        "total": 145,
+        "rates": [
+          0.0017793594306049821
+        ],
+        "kind": "Autograph / memorabilia",
+        "defaultWeight": 1,
+        "source": "section",
+        "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+        "weight": 1,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 1,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 1,
+        "downweighted": false,
+        "predicted": 145.51601423487543,
+        "error": 0.0035587188612098467,
+        "impliedEligible": 29.103202846975087,
+        "exclusionReason": ""
+      },
+      {
+        "id": "o12",
+        "name": "CHROME PROSPECTS AUTO PADPARADSCHA SAPPHIRE",
+        "count": 29,
+        "serial": 1,
+        "total": 29,
+        "rates": [
+          0.00035335689045936394
+        ],
+        "kind": "Autograph / memorabilia",
+        "defaultWeight": 1,
+        "source": "section",
+        "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+        "weight": 1,
+        "enabled": true,
+        "precisionFactor": 1,
+        "priorWeight": 1,
+        "participation": "median",
+        "used": true,
+        "effectiveWeight": 1,
+        "downweighted": false,
+        "predicted": 28.897526501766784,
+        "error": 0.0035335689045936647,
+        "impliedEligible": 28.897526501766784,
+        "exclusionReason": ""
+      }
+    ]
+  },
+  "conclusion": "The published historical artifact and PRV independently used different anchor sets and policies. Unconfirmed /199 at weight 0.1 changes the weighted median; PRV excludes all autograph anchors and /1 and rounds to nearest 5. This is not a rounding-only discrepancy. A new official-only Lab revision is staged; neither legacy number is silently selected.",
+  "production_resolution": "Not activated; review new official-only assumptions and immutable revision before production qualification."
+}

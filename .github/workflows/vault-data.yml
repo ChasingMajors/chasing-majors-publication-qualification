@@ -1,0 +1,205 @@
+name: Isolated complete CV PRV search publication qualification
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      expected_codes:
+        description: Comma-separated submitted product codes; asserted before and after deploy
+        type: string
+        default: ''
+      mode:
+        description: Probes are non-production only
+        type: choice
+        options: [normal, validation-failure-probe, postdeploy-failure-probe]
+        default: normal
+permissions:
+  contents: read
+concurrency:
+  group: cm-isolated-publication-qualification
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.1'
+      - name: Enforce isolated repository and reviewed bootstrap policy
+        run: node scripts/qualification-target.cjs check
+      - name: Pin source and expected product codes
+        env:
+          CM_EXPECTED_CODES: ${{ inputs.expected_codes }}
+          CM_BEFORE_SHA: ${{ github.event.before }}
+          GH_TOKEN: ${{ github.token }}
+          PROBE_MODE: ${{ inputs.mode }}
+        run: |
+          # A fixed case file permits autonomous isolated probes with Contents write only.
+          if [ -z "${PROBE_MODE:-}" ]; then PROBE_MODE=$(node scripts/qualification-target.cjs probe); fi
+          echo "CM_QUALIFICATION_MODE=$PROBE_MODE" >> "$GITHUB_ENV"
+          echo "CM_RELEASE_BUILD_TIME=$(git show -s --format=%cI "$GITHUB_SHA")" >> "$GITHUB_ENV"
+          node scripts/ensure-release-history.cjs
+          node scripts/content-release.cjs expected "$RUNNER_TEMP/required-products.json"
+      - name: Validate source, exact identities and payload references
+        env:
+          PROBE_MODE: ${{ env.CM_QUALIFICATION_MODE }}
+        run: |
+          if [ "$PROBE_MODE" = validation-failure-probe ]; then
+            node scripts/content-release.cjs validate --probe-invalid
+          else
+            node scripts/content-release.cjs validate
+          fi
+      - name: Deterministically rebuild complete indexes and v2
+        run: node scripts/build-content-release.cjs
+      - name: Fingerprint complete bounded-search inputs
+        id: search-inputs
+        env:
+          NODE_OPTIONS: --require=${{ github.workspace }}/.github/recovery/canonical-runtime.cjs
+        run: node scripts/search-query/reuse.cjs key "$RUNNER_TEMP/search-inputs.json"
+      - name: Restore exact bounded-search candidate
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/cm-search-cache
+          key: ${{ steps.search-inputs.outputs.key }}
+      - name: Build complete memory-bounded search directory or verify exact reuse (offline SQLite, never D1)
+        env:
+          TMPDIR: ${{ runner.temp }}
+          SQLITE_TMPDIR: ${{ runner.temp }}
+          NODE_OPTIONS: --require=${{ github.workspace }}/.github/recovery/canonical-runtime.cjs
+        run: node scripts/search-query/reuse.cjs run "$RUNNER_TEMP/cm-query" "$RUNNER_TEMP/cm-search-cache"
+      - name: Content regression tests (blocking)
+        run: node --test tests/*.test.cjs
+      - name: Validate rebuilt release
+        run: node scripts/content-release.cjs validate
+      - name: Pin isolated custom hostname before immutable assembly
+        run: node scripts/qualification-target.cjs cname
+      - name: Assemble one immutable Pages artifact (size guarded)
+        env:
+          CM_QUERY_DIRECTORY: ${{ runner.temp }}/cm-query/derived
+          NODE_OPTIONS: --require=${{ github.workspace }}/.github/recovery/canonical-runtime.cjs
+        run: node scripts/content-release.cjs assemble "$RUNNER_TEMP/cm-site" "$RUNNER_TEMP/required-products.json"
+      - name: Prepare qualified search cache after all blocking checks
+        env:
+          NODE_OPTIONS: --require=${{ github.workspace }}/.github/recovery/canonical-runtime.cjs
+        run: node scripts/search-query/reuse.cjs save "$RUNNER_TEMP/cm-query" "$RUNNER_TEMP/cm-search-cache"
+      - name: Save qualified bounded-search cache
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/cm-search-cache
+          key: ${{ steps.search-inputs.outputs.key }}
+      - name: Upload search reuse evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-reuse-evidence
+          retention-days: 7
+          path: |
+            ${{ runner.temp }}/search-inputs.json
+            ${{ runner.temp }}/cm-query/reuse-result.json
+            ${{ runner.temp }}/cm-query/receipt.json
+      - name: Upload small SHA-bound manifest for the operator monitor
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-release-manifest
+          path: ${{ runner.temp }}/cm-site/data/publish-release.json
+          retention-days: 7
+      - name: Upload exact validated artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/cm-site
+          retention-days: 1
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: refresh
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.qualification/target.json
+            /scripts/qualification-target.cjs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.1'
+      - name: Enforce isolated deployment target
+        run: node scripts/qualification-target.cjs check
+      - name: Reject an obsolete source before deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          latest=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq .object.sha)
+          test "$latest" = "$GITHUB_SHA" || { echo 'Superseded release rejected; no deployment requested.'; exit 1; }
+      - name: Deploy the immutable artifact
+        id: pages
+        uses: actions/deploy-pages@v4
+  verify:
+    needs: [refresh, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/content-release.cjs
+            /scripts/qualification-target.cjs
+            /.qualification/target.json
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.1'
+      - name: Enforce isolated repository and reviewed bootstrap policy
+        run: node scripts/qualification-target.cjs check
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/pages-artifact
+      - name: Verify live SHA, new codes, counts, parallels and hashes
+        env:
+          PAGE_URL: ${{ needs.deploy.outputs.page_url }}
+          PROBE_MODE: ${{ inputs.mode }}
+        run: |
+          if [ -z "${PROBE_MODE:-}" ]; then PROBE_MODE=$(node scripts/qualification-target.cjs probe); fi
+          mkdir "$RUNNER_TEMP/cm-verify"
+          tar -xf "$RUNNER_TEMP/pages-artifact/artifact.tar" -C "$RUNNER_TEMP/cm-verify" ./data/publish-release.json
+          verified_url=$(node scripts/qualification-target.cjs origin "$PAGE_URL")
+          for attempt in 1 2 3 4 5; do
+            if node scripts/content-release.cjs verify "$verified_url" "$RUNNER_TEMP/cm-verify/data/publish-release.json"; then
+              node scripts/qualification-target.cjs edge "$RUNNER_TEMP/qualification-edge.json"
+              if [ "${PROBE_MODE:-normal}" = postdeploy-failure-probe ]; then
+                echo 'Injected isolated post-deployment failure after verified content; trusted coordinator must roll back source.'
+                exit 1
+              fi
+              exit 0
+            fi
+            sleep 20
+          done
+          exit 1
+      - name: Archive isolated edge verification receipt even after injected failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qualification-edge-receipt
+          path: ${{ runner.temp }}/qualification-edge.json
+          if-no-files-found: error
+          retention-days: 7

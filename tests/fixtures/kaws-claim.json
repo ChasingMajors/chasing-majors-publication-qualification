@@ -1,0 +1,31 @@
+{
+  "claim_id": "kaws-2026-orange-published-pack-odds",
+  "product_code": "2026_topps_mlb_x_kaws_baseball",
+  "kind": "official_pack_odds",
+  "value": "1:38",
+  "subject_scope": "Topps published intended configuration: Base Orange parallel, pack odds, not actual count",
+  "primary_sources": [
+    {
+      "http_status": 200,
+      "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/KAWS_Odds.pdf?v=1784559267",
+      "sha256": "7d53f1fa1535a812520a3a4611e57da0661e3d2e26536c703d0cf3802ded2ef1",
+      "matches_pinned_bytes": true,
+      "pages": 1,
+      "bytes": 545741,
+      "hash_verified": true,
+      "identity_bound": true
+    }
+  ],
+  "source_receipt_bound": true,
+  "evidence_receipt_sha256": "499d065cdc96048f48b3f8fd7854cfc3bbdc00a3d6494eb9323bb4efb829c169",
+  "dependencies_clear": true,
+  "critical_conflicts": [],
+  "asserts_packed_count": false,
+  "official_field": {
+    "value": "1:38",
+    "page": 1,
+    "row": "26TNKB - BASE CARDS ORANGE PARALLEL 1:38",
+    "subject_scope": "Topps published intended configuration: Base Orange parallel, pack odds, not actual count",
+    "source_sha256": "7d53f1fa1535a812520a3a4611e57da0661e3d2e26536c703d0cf3802ded2ef1"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "ok": true,
+  "sport": "football",
+  "kind": "checklist_search",
+  "source": "Product-scoped approved import search update",
+  "generated_at": "2026-10-31T01:02:36.549Z",
+  "sharded": true,
+  "shards": [
+    "football-001.json",
+    "football-002.json",
+    "football-003.json",
+    "football-004.json",
+    "football-005.json",
+    "football-006.json",
+    "football-007.json",
+    "football-008.json",
+    "football-009.json",
+    "football-010.json",
+    "football-011.json",
+    "football-012.json",
+    "football-013.json",
+    "football-014.json",
+    "football-015.json",
+    "football-016.json",
+    "football-017.json",
+    "football-reviewed-2026-bowman-university-best-football.json",
+    "football-reviewed-2026-topps-chrome-football.json",
+    "football-reviewed-2026-topps-heritage-football.json",
+    "football-reviewed-2026-topps-inception-football.json",
+    "football-reviewed-2024-bowman-university-best-football.json",
+    "football-reviewed-2024-bowman-university-chrome-football.json",
+    "football-reviewed-2024-bowman-university-chrome-sapphire-football.json",
+    "football-reviewed-2024-topps-chrome-football.json",
+    "football-reviewed-2024-topps-chrome-sapphire-football.json",
+    "football-reviewed-2024-topps-cosmic-chrome-football.json",
+    "football-reviewed-2024-topps-finest-football.json",
+    "football-reviewed-2024-topps-inception-football.json",
+    "football-reviewed-2024-topps-midnight-football.json",
+    "football-reviewed-2024-topps-resurgence-football.json",
+    "football-reviewed-2024-topps-signature-class-football.json",
+    "football-reviewed-2026-topps-flagship-football.json",
+    "football-reviewed-2025-panini-prizm-black-football.json",
+    "football-reviewed-2024-clearly-donruss-football.json",
+    "football-reviewed-2024-donruss-elite-football.json",
+    "football-reviewed-2024-donruss-optic-football.json",
+    "football-reviewed-2024-panini-absolute-football.json",
+    "football-reviewed-2024-panini-encore-football.json",
+    "football-reviewed-2024-panini-gold-standard-football.json",
+    "football-reviewed-2024-panini-impeccable-football.json",
+    "football-reviewed-2024-panini-luminance-football.json",
+    "football-reviewed-2024-panini-mosaic-football.json",
+    "football-reviewed-2024-panini-obsidian-football.json",
+    "football-reviewed-2024-panini-origins-football.json",
+    "football-reviewed-2024-panini-phoenix-football.json",
+    "football-reviewed-2024-panini-photogenic-football.json",
+    "football-reviewed-2024-panini-prestige-football.json",
+    "football-reviewed-2024-panini-prizm-deca-football.json",
+    "football-reviewed-2024-panini-prizm-draft-picks-football.json",
+    "football-reviewed-2024-panini-prizm-football.json",
+    "football-reviewed-2024-panini-rookies-stars-football.json",
+    "football-reviewed-2024-panini-select-football.json",
+    "football-reviewed-2024-panini-spectra-football.json",
+    "football-reviewed-2024-panini-totally-certified-football.json",
+    "football-reviewed-2024-score-a-treat-football.json",
+    "football-reviewed-2024-score-football.json",
+    "football-reviewed-2024-topps-now-rookie-campaign-quarterbacks-football.json",
+    "football-product-2026-panini-obsidian-football-1792536461974-001.json",
+    "football-reviewed-2026-bowman-football.json",
+    "football-product-2026-topps-holiday-football-1793057505819-001.json",
+    "football-product-2026-bowman-sapphire-football-football-checklist-1793408560798-001.json"
+  ],
+  "product_shards": {
+    "2026_bowman_university_best_football": [
+      "football-reviewed-2026-bowman-university-best-football.json"
+    ],
+    "2026_topps_chrome_football": [
+      "football-reviewed-2026-topps-chrome-football.json"
+    ],
+    "2026_topps_heritage_football": [
+      "football-reviewed-2026-topps-heritage-football.json"
+    ],
+    "2026_topps_inception_football": [
+      "football-reviewed-2026-topps-inception-football.json"
+    ],
+    "2024-bowman-university-best-football": [
+      "football-reviewed-2024-bowman-university-best-football.json"
+    ],
+    "2024-bowman-university-chrome-football": [
+      "football-reviewed-2024-bowman-university-chrome-football.json"
+    ],
+    "2024-bowman-university-chrome-sapphire-football": [
+      "football-reviewed-2024-bowman-university-chrome-sapphire-football.json"
+    ],
+    "2024-topps-chrome-football": [
+      "football-reviewed-2024-topps-chrome-football.json"
+    ],
+    "2024-topps-chrome-sapphire-football": [
+      "football-reviewed-2024-topps-chrome-sapphire-football.json"
+    ],
+    "2024-topps-cosmic-chrome-football": [
+      "football-reviewed-2024-topps-cosmic-chrome-football.json"
+    ],
+    "2024-topps-finest-football": [
+      "football-reviewed-2024-topps-finest-football.json"
+    ],
+    "2024-topps-inception-football": [
+      "football-reviewed-2024-topps-inception-football.json"
+    ],
+    "2024-topps-midnight-football": [
+      "football-reviewed-2024-topps-midnight-football.json"
+    ],
+    "2024-topps-resurgence-football": [
+      "football-reviewed-2024-topps-resurgence-football.json"
+    ],
+    "2024-topps-signature-class-football": [
+      "football-reviewed-2024-topps-signature-class-football.json"
+    ],
+    "2026_topps_flagship_football": [
+      "football-reviewed-2026-topps-flagship-football.json"
+    ],
+    "2025_Panini_Prizm_Black_Football": [
+      "football-reviewed-2025-panini-prizm-black-football.json"
+    ],
+    "2024-clearly-donruss-football": [
+      "football-reviewed-2024-clearly-donruss-football.json"
+    ],
+    "2024-donruss-elite-football": [
+      "football-reviewed-2024-donruss-elite-football.json"
+    ],
+    "2024-donruss-optic-football": [
+      "football-reviewed-2024-donruss-optic-football.json"
+    ],
+    "2024-panini-absolute-football": [
+      "football-reviewed-2024-panini-absolute-football.json"
+    ],
+    "2024-panini-encore-football": [
+      "football-reviewed-2024-panini-encore-football.json"
+    ],
+    "2024-panini-gold-standard-football": [
+      "football-reviewed-2024-panini-gold-standard-football.json"
+    ],
+    "2024-panini-impeccable-football": [
+      "football-reviewed-2024-panini-impeccable-football.json"
+    ],
+    "2024-panini-luminance-football": [
+      "football-reviewed-2024-panini-luminance-football.json"
+    ],
+    "2024-panini-mosaic-football": [
+      "football-reviewed-2024-panini-mosaic-football.json"
+    ],
+    "2024-panini-obsidian-football": [
+      "football-reviewed-2024-panini-obsidian-football.json"
+    ],
+    "2024-panini-origins-football": [
+      "football-reviewed-2024-panini-origins-football.json"
+    ],
+    "2024-panini-phoenix-football": [
+      "football-reviewed-2024-panini-phoenix-football.json"
+    ],
+    "2024-panini-photogenic-football": [
+      "football-reviewed-2024-panini-photogenic-football.json"
+    ],
+    "2024-panini-prestige-football": [
+      "football-reviewed-2024-panini-prestige-football.json"
+    ],
+    "2024-panini-prizm-deca-football": [
+      "football-reviewed-2024-panini-prizm-deca-football.json"
+    ],
+    "2024-panini-prizm-draft-picks-football": [
+      "football-reviewed-2024-panini-prizm-draft-picks-football.json"
+    ],
+    "2024-panini-prizm-football": [
+      "football-reviewed-2024-panini-prizm-football.json"
+    ],
+    "2024-panini-rookies-stars-football": [
+      "football-reviewed-2024-panini-rookies-stars-football.json"
+    ],
+    "2024-panini-select-football": [
+      "football-reviewed-2024-panini-select-football.json"
+    ],
+    "2024-panini-spectra-football": [
+      "football-reviewed-2024-panini-spectra-football.json"
+    ],
+    "2024-panini-totally-certified-football": [
+      "football-reviewed-2024-panini-totally-certified-football.json"
+    ],
+    "2024-score-a-treat-football": [
+      "football-reviewed-2024-score-a-treat-football.json"
+    ],
+    "2024-score-football": [
+      "football-reviewed-2024-score-football.json"
+    ],
+    "2024-topps-now-rookie-campaign-quarterbacks-football": [
+      "football-reviewed-2024-topps-now-rookie-campaign-quarterbacks-football.json"
+    ],
+    "2026_panini_obsidian_football": [
+      "football-product-2026-panini-obsidian-football-1792536461974-001.json"
+    ],
+    "2026_bowman_football": [
+      "football-reviewed-2026-bowman-football.json"
+    ],
+    "2026_topps_holiday_football": [
+      "football-product-2026-topps-holiday-football-1793057505819-001.json"
+    ],
+    "2026_bowman_sapphire_football_football_checklist": [
+      "football-product-2026-bowman-sapphire-football-football-checklist-1793408560798-001.json"
+    ]
+  }
+}

@@ -1,0 +1,2750 @@
+{
+  "schema_version": 4,
+  "code": "2023_bowman_sapphire_edition_baseball",
+  "meta": {
+    "code": "2023_bowman_sapphire_edition_baseball",
+    "displayName": "2023 Bowman Sapphire Baseball",
+    "keywords": "2023 Bowman Sapphire Baseball, Bowman Sapphire Baseball 2023, 2023 Bowman Sapphire cards, Bowman Sapphire baseball cards 2023, 2023 Bowman Sapphire MLB prospects, Bowman Sapphire prospects 2023, Bowman Sapphire chrome cards 2023, 2023 Bowman Sapphire rookie cards, Bowman Sapphire rookies 2023, Bowman Sapphire 1st Bowman cards 2023, Bowman Sapphire autos 2023, Bowman Sapphire autographs 2023, Bowman Sapphire parallels 2023, Bowman Sapphire refractors 2023, Sapphire edition prospect cards 2023 Bowman, Bowman Sapphire inserts 2023, Bowman Sapphire superfractor 2023, premium prospect baseball cards 2023 Bowman, Bowman Sapphire Baseball checklist 2023, Bowman Sapphire checklist",
+    "year": "2023",
+    "manufacturer": "Bowman",
+    "product": "Sapphire",
+    "sport": "baseball"
+  },
+  "sources": {
+    "estimate_url": "https://chasingmajors.github.io/chasing-majors-maintenance-staging/authoritative-prv/2023_bowman_sapphire_edition_baseball/lab-result.json",
+    "reviewed_date": "2026-11-20"
+  },
+  "method": {
+    "name": "print_run_lab_estimates_v1",
+    "calibration": "Print Run Lab weighted-median fit of 1 Topps pack formats to numbered anchors. Only rows passing the leave-one-anchor-out stability rule (per-card change <= 5% in every refit) are published. Provisional; not manufacturer-confirmed."
+  },
+  "lab_provenance": {
+    "status": "staging-published-revision",
+    "project_id": "prl_staging-bowman-sapphire-2023",
+    "revision_id": "stage-00f903f8e0ca1d20592ea5a0",
+    "snapshot_sha256": "9c1375a885934f8a346bcced0309bd9c534e3fb476d7ed9855f3d6e90ab32cb3",
+    "model": {
+      "version": "weighted-median-v1",
+      "engine_sha256": "6cdac98700c0f07d479532729a9515fe4e59f157e237570bd628c731aece3709"
+    },
+    "cv_sha256": "668d78c1fe9f073354d4a1aa0891f16b82f619a92e5b04ddcc40bc60f54252aa",
+    "source_documents": {
+      "checklist": {
+        "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023BowmanSapphireBaseballChecklist.pdf",
+        "sha256": "f8b0abe788b583c79477b4337c9e5f653701d1c9b78e13e891f1554e1902bb34",
+        "bytes": 47811,
+        "pages": 4,
+        "http_status": 200,
+        "acquisition": "live_https",
+        "extraction": "pdfplumber_words_xy_v1",
+        "extracted_sha256": "45b50004b8e39600f3dd7e530bea87253fe7dbbe09f08ce328a357590d78596b"
+      },
+      "odds": {
+        "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+        "sha256": "57fb28bfadcdd6c91df69c743fb064bc27c1da6e4ebe741c5eabc7c5a6b31163",
+        "bytes": 251397,
+        "pages": 1,
+        "http_status": 200,
+        "acquisition": "live_https",
+        "extraction": "pdfplumber_words_xy_v1",
+        "extracted_sha256": "994639765af98afc89709d1d595a27e8e9f370520b0032708c1f98c64fc087f6"
+      }
+    },
+    "source_membership_assumption": "All listed subjects eligible in each mapped parallel; individual autograph availability can vary.",
+    "numbering_policy": "Only official NumberedTo values are anchors. Blank ordinary autograph is not /199. Estimated packed counts remain distinct from nominal ceilings.",
+    "formats": [
+      "5121 - PACK ODDS"
+    ],
+    "stability_rule": {
+      "name": "leave-one-anchor-out stability",
+      "max_relative_change": 0.05,
+      "anchors_tested": 12,
+      "invalid_refits": [],
+      "relic_handling": "hold"
+    }
+  },
+  "records": [
+    {
+      "id": "o0",
+      "kind": "estimate",
+      "category": "Base",
+      "name": "Base Sapphire Chrome Prospects",
+      "subjects": 150,
+      "estimate": 54.52,
+      "serial_limit": null,
+      "parallel": "Base Cards Aqua Sapphire",
+      "page": 1,
+      "official_serial_limit": 55
+    },
+    {
+      "id": "o1",
+      "kind": "estimate",
+      "category": "Base",
+      "name": "Base Sapphire Chrome Prospects",
+      "subjects": 150,
+      "estimate": 60.577777777777776,
+      "serial_limit": null,
+      "parallel": "Base Cards Green Sapphire",
+      "page": 1,
+      "official_serial_limit": 60
+    },
+    {
+      "id": "o2",
+      "kind": "estimate",
+      "category": "Base",
+      "name": "Base Sapphire Chrome Prospects",
+      "subjects": 150,
+      "estimate": 49.56363636363637,
+      "serial_limit": null,
+      "parallel": "Base Cards Orange Sapphire",
+      "page": 1,
+      "official_serial_limit": 50
+    },
+    {
+      "id": "o3",
+      "kind": "estimate",
+      "category": "Base",
+      "name": "Base Sapphire Chrome Prospects",
+      "subjects": 150,
+      "estimate": 24.781818181818185,
+      "serial_limit": null,
+      "parallel": "Base Cards Purple Sapphire",
+      "page": 1,
+      "official_serial_limit": 25
+    },
+    {
+      "id": "o4",
+      "kind": "estimate",
+      "category": "Base",
+      "name": "Base Sapphire Chrome Prospects",
+      "subjects": 150,
+      "estimate": 10.096296296296295,
+      "serial_limit": null,
+      "parallel": "Base Cards Red Sapphire",
+      "page": 1,
+      "official_serial_limit": 10
+    },
+    {
+      "id": "o5",
+      "kind": "estimate",
+      "category": "Base",
+      "name": "Base Sapphire Chrome Prospects",
+      "subjects": 150,
+      "estimate": 1.0365019011406844,
+      "serial_limit": null,
+      "parallel": "Base Cards Padparadscha Sapphire",
+      "page": 1,
+      "official_serial_limit": 1
+    },
+    {
+      "id": "o6",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 201.42857142857144,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto",
+      "page": 1,
+      "official_serial_limit": null
+    },
+    {
+      "id": "o7",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 53.20754716981132,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto Aqua Sapphire",
+      "page": 1,
+      "official_serial_limit": 99
+    },
+    {
+      "id": "o8",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 49.473684210526315,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto Green Sapphire",
+      "page": 1,
+      "official_serial_limit": 50
+    },
+    {
+      "id": "o9",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 25.17857142857143,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto Orange Sapphire",
+      "page": 1,
+      "official_serial_limit": 25
+    },
+    {
+      "id": "o10",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 10.10752688172043,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto Purple Sapphire",
+      "page": 1,
+      "official_serial_limit": 10
+    },
+    {
+      "id": "o11",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 5.017793594306049,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto Red Sapphire",
+      "page": 1,
+      "official_serial_limit": 5
+    },
+    {
+      "id": "o12",
+      "kind": "estimate",
+      "category": "Autograph",
+      "name": "Chrome Prospect Autographs",
+      "subjects": 29,
+      "estimate": 0.9964664310954063,
+      "serial_limit": null,
+      "parallel": "Chrome Prospects Auto Padparadscha Sapphire",
+      "page": 1,
+      "official_serial_limit": 1
+    }
+  ],
+  "lab_result": {
+    "schema_version": 1,
+    "project_id": "prl_staging-bowman-sapphire-2023",
+    "revision_id": "stage-00f903f8e0ca1d20592ea5a0",
+    "published_at": "2026-11-20T22:55:29.593Z",
+    "estimate_status": "provisional",
+    "calibration_status": "not-yet-calibrated",
+    "model": {
+      "version": "weighted-median-v1",
+      "engine_sha256": "6cdac98700c0f07d479532729a9515fe4e59f157e237570bd628c731aece3709"
+    },
+    "project": {
+      "version": 1,
+      "title": "2023 Bowman Sapphire Baseball — authoritative staging",
+      "families": [
+        {
+          "id": "f0",
+          "name": "CHROME PROSPECTS",
+          "count": 150,
+          "cards": [
+            {
+              "id": "BCP-1",
+              "description": "Zack Gelof Oakland Athletics™",
+              "page": 1
+            },
+            {
+              "id": "BCP-2",
+              "description": "Pedro Ramírez Chicago Cubs®",
+              "page": 1
+            },
+            {
+              "id": "BCP-3",
+              "description": "Justin Crawford Philadelphia Phillies®",
+              "page": 1
+            },
+            {
+              "id": "BCP-4",
+              "description": "Javier Osorio Detroit Tigers®",
+              "page": 1
+            },
+            {
+              "id": "BCP-5",
+              "description": "Daniel Susac Oakland Athletics™",
+              "page": 1
+            },
+            {
+              "id": "BCP-6",
+              "description": "Wilber Sanchez Chicago White Sox®",
+              "page": 1
+            },
+            {
+              "id": "BCP-7",
+              "description": "Mishael Deson Baltimore Orioles®",
+              "page": 1
+            },
+            {
+              "id": "BCP-8",
+              "description": "Max Wagner Baltimore Orioles®",
+              "page": 1
+            },
+            {
+              "id": "BCP-9",
+              "description": "Cole Young Seattle Mariners™",
+              "page": 1
+            },
+            {
+              "id": "BCP-10",
+              "description": "Ryan Clifford Houston Astros®",
+              "page": 1
+            },
+            {
+              "id": "BCP-11",
+              "description": "Moises Ballesteros Chicago Cubs®",
+              "page": 1
+            },
+            {
+              "id": "BCP-12",
+              "description": "Jesus Baez New York Mets®",
+              "page": 1
+            },
+            {
+              "id": "BCP-13",
+              "description": "Oscar Colas Chicago White Sox®",
+              "page": 1
+            },
+            {
+              "id": "BCP-14",
+              "description": "Henry Davis Pittsburgh Pirates®",
+              "page": 1
+            },
+            {
+              "id": "BCP-15",
+              "description": "Jonathan Mejia St. Louis Cardinals®",
+              "page": 1
+            },
+            {
+              "id": "BCP-16",
+              "description": "Drew Gilbert Houston Astros®",
+              "page": 1
+            },
+            {
+              "id": "BCP-17",
+              "description": "Austin Charles Kansas City Royals®",
+              "page": 1
+            },
+            {
+              "id": "BCP-18",
+              "description": "Jasson Dominguez New York Yankees®",
+              "page": 1
+            },
+            {
+              "id": "BCP-19",
+              "description": "Randy De Jesus Angels®",
+              "page": 1
+            },
+            {
+              "id": "BCP-20",
+              "description": "Jackson Holliday Baltimore Orioles®",
+              "page": 1
+            },
+            {
+              "id": "BCP-21",
+              "description": "Daniel Guilarte Milwaukee Brewers™",
+              "page": 1
+            },
+            {
+              "id": "BCP-22",
+              "description": "Dyan Jorge Colorado Rockies™",
+              "page": 1
+            },
+            {
+              "id": "BCP-23",
+              "description": "Elijah Green Washington Nationals®",
+              "page": 1
+            },
+            {
+              "id": "BCP-24",
+              "description": "Cristian Hernandez Chicago Cubs®",
+              "page": 1
+            },
+            {
+              "id": "BCP-25",
+              "description": "Druw Jones Arizona Diamondbacks®",
+              "page": 1
+            },
+            {
+              "id": "BCP-26",
+              "description": "Dayan Frias Cleveland Guardians™",
+              "page": 1
+            },
+            {
+              "id": "BCP-27",
+              "description": "Rickardo Perez Philadelphia Phillies®",
+              "page": 1
+            },
+            {
+              "id": "BCP-28",
+              "description": "Martin Gonzalez Seattle Mariners™",
+              "page": 1
+            },
+            {
+              "id": "BCP-29",
+              "description": "Ceddanne Rafaela Boston Red Sox®",
+              "page": 1
+            },
+            {
+              "id": "BCP-30",
+              "description": "Yanquiel Fernandez Colorado Rockies™",
+              "page": 1
+            },
+            {
+              "id": "BCP-31",
+              "description": "Brooks Lee Minnesota Twins®",
+              "page": 1
+            },
+            {
+              "id": "BCP-32",
+              "description": "Colby Thomas Oakland Athletics™",
+              "page": 1
+            },
+            {
+              "id": "BCP-33",
+              "description": "Ambioris Tavarez Atlanta Braves™",
+              "page": 1
+            },
+            {
+              "id": "BCP-34",
+              "description": "Abdias De La Cruz Arizona Diamondbacks®",
+              "page": 1
+            },
+            {
+              "id": "BCP-35",
+              "description": "Frederick Bencosme Baltimore Orioles®",
+              "page": 1
+            },
+            {
+              "id": "BCP-36",
+              "description": "Logan Wagner Los Angeles Dodgers®",
+              "page": 1
+            },
+            {
+              "id": "BCP-37",
+              "description": "Bryan Acuña Minnesota Twins®",
+              "page": 1
+            },
+            {
+              "id": "BCP-38",
+              "description": "Simon Juan New York Mets®",
+              "page": 1
+            },
+            {
+              "id": "BCP-39",
+              "description": "Kumar Rocker Texas Rangers®",
+              "page": 1
+            },
+            {
+              "id": "BCP-40",
+              "description": "Kenni Gomez Houston Astros®",
+              "page": 1
+            },
+            {
+              "id": "BCP-41",
+              "description": "Eric Brown Jr. Milwaukee Brewers™",
+              "page": 1
+            },
+            {
+              "id": "BCP-42",
+              "description": "Ruben Santana Arizona Diamondbacks®",
+              "page": 1
+            },
+            {
+              "id": "BCP-43",
+              "description": "Marco Luciano San Francisco Giants®",
+              "page": 1
+            },
+            {
+              "id": "BCP-44",
+              "description": "Andres Mesa Texas Rangers®",
+              "page": 1
+            },
+            {
+              "id": "BCP-45",
+              "description": "Gabriel Martinez Toronto Blue Jays®",
+              "page": 1
+            },
+            {
+              "id": "BCP-46",
+              "description": "Marcos Cabrera New York Yankees®",
+              "page": 1
+            },
+            {
+              "id": "BCP-47",
+              "description": "Lizandro Rodriguez Kansas City Royals®",
+              "page": 1
+            },
+            {
+              "id": "BCP-48",
+              "description": "Colson Montgomery Chicago White Sox®",
+              "page": 1
+            },
+            {
+              "id": "BCP-49",
+              "description": "Jett Williams New York Mets®",
+              "page": 1
+            },
+            {
+              "id": "BCP-50",
+              "description": "Alex Ramirez New York Mets®",
+              "page": 2
+            },
+            {
+              "id": "BCP-51",
+              "description": "Justyn-Henry Malloy Atlanta Braves™",
+              "page": 2
+            },
+            {
+              "id": "BCP-52",
+              "description": "Hao Yu Lee Philadelphia Phillies®",
+              "page": 2
+            },
+            {
+              "id": "BCP-53",
+              "description": "Jace Jung Detroit Tigers®",
+              "page": 2
+            },
+            {
+              "id": "BCP-54",
+              "description": "Cristhian Vaquero Washington Nationals®",
+              "page": 2
+            },
+            {
+              "id": "BCP-55",
+              "description": "Mairoshendrick Martinus Los Angeles Dodgers®",
+              "page": 2
+            },
+            {
+              "id": "BCP-56",
+              "description": "Christian Cerda Arizona Diamondbacks®",
+              "page": 2
+            },
+            {
+              "id": "BCP-57",
+              "description": "Peyton Graham Detroit Tigers®",
+              "page": 2
+            },
+            {
+              "id": "BCP-58",
+              "description": "Lazaro Montes Seattle Mariners™",
+              "page": 2
+            },
+            {
+              "id": "BCP-59",
+              "description": "Gleider Figuereo Texas Rangers®",
+              "page": 2
+            },
+            {
+              "id": "BCP-60",
+              "description": "Aeverson Arteaga San Francisco Giants®",
+              "page": 2
+            },
+            {
+              "id": "BCP-61",
+              "description": "Junior Caminero Tampa Bay Rays™",
+              "page": 2
+            },
+            {
+              "id": "BCP-62",
+              "description": "Antony Peguero Miami Marlins®",
+              "page": 2
+            },
+            {
+              "id": "BCP-63",
+              "description": "Michael Arroyo Seattle Mariners™",
+              "page": 2
+            },
+            {
+              "id": "BCP-64",
+              "description": "Zach Neto Angels®",
+              "page": 2
+            },
+            {
+              "id": "BCP-65",
+              "description": "Elly De LA Cruz Cincinnati Reds®",
+              "page": 2
+            },
+            {
+              "id": "BCP-66",
+              "description": "Edwin Arroyo Cincinnati Reds®",
+              "page": 2
+            },
+            {
+              "id": "BCP-67",
+              "description": "William Bergolla Philadelphia Phillies®",
+              "page": 2
+            },
+            {
+              "id": "BCP-68",
+              "description": "Brady House Washington Nationals®",
+              "page": 2
+            },
+            {
+              "id": "BCP-69",
+              "description": "Mikey Romero Boston Red Sox®",
+              "page": 2
+            },
+            {
+              "id": "BCP-70",
+              "description": "Jefferson Rojas Chicago Cubs®",
+              "page": 2
+            },
+            {
+              "id": "BCP-71",
+              "description": "Roman Anthony Boston Red Sox®",
+              "page": 2
+            },
+            {
+              "id": "BCP-72",
+              "description": "Yoffry Solano Miami Marlins®",
+              "page": 2
+            },
+            {
+              "id": "BCP-73",
+              "description": "Axel Sanchez Seattle Mariners™",
+              "page": 2
+            },
+            {
+              "id": "BCP-74",
+              "description": "Matt Mervis Chicago Cubs®",
+              "page": 2
+            },
+            {
+              "id": "BCP-75",
+              "description": "Samuel Zavala San Diego Padres™",
+              "page": 2
+            },
+            {
+              "id": "BCP-76",
+              "description": "Jackson Chourio Milwaukee Brewers™",
+              "page": 2
+            },
+            {
+              "id": "BCP-77",
+              "description": "Juan Brito Colorado Rockies™",
+              "page": 2
+            },
+            {
+              "id": "BCP-78",
+              "description": "Ariel Almonte Cincinnati Reds®",
+              "page": 2
+            },
+            {
+              "id": "BCP-79",
+              "description": "Manuel Beltre Toronto Blue Jays®",
+              "page": 2
+            },
+            {
+              "id": "BCP-80",
+              "description": "Samuel Munoz Los Angeles Dodgers®",
+              "page": 2
+            },
+            {
+              "id": "BCP-81",
+              "description": "Nerwilian Cedeno San Diego Padres™",
+              "page": 2
+            },
+            {
+              "id": "BCP-82",
+              "description": "Edouard Julien Minnesota Twins®",
+              "page": 2
+            },
+            {
+              "id": "BCP-83",
+              "description": "Jaison Chourio Cleveland Guardians™",
+              "page": 2
+            },
+            {
+              "id": "BCP-84",
+              "description": "Leandro Arias Baltimore Orioles®",
+              "page": 2
+            },
+            {
+              "id": "BCP-85",
+              "description": "Anthony Gutierrez Texas Rangers®",
+              "page": 2
+            },
+            {
+              "id": "BCP-86",
+              "description": "Yilber Herrera Minnesota Twins®",
+              "page": 2
+            },
+            {
+              "id": "BCP-87",
+              "description": "Max Muncy Oakland Athletics™",
+              "page": 2
+            },
+            {
+              "id": "BCP-88",
+              "description": "Termarr Johnson Pittsburgh Pirates®",
+              "page": 2
+            },
+            {
+              "id": "BCP-89",
+              "description": "Nikau Pouaka-Grego Philadelphia Phillies®",
+              "page": 2
+            },
+            {
+              "id": "BCP-90",
+              "description": "Braylon Bishop Pittsburgh Pirates®",
+              "page": 2
+            },
+            {
+              "id": "BCP-91",
+              "description": "Kevin Parada New York Mets®",
+              "page": 2
+            },
+            {
+              "id": "BCP-92",
+              "description": "Jordan Lawlar Arizona Diamondbacks®",
+              "page": 2
+            },
+            {
+              "id": "BCP-93",
+              "description": "Kyle Harrison San Francisco Giants®",
+              "page": 2
+            },
+            {
+              "id": "BCP-94",
+              "description": "Luis Garcia Toronto Blue Jays®",
+              "page": 2
+            },
+            {
+              "id": "BCP-95",
+              "description": "Hector Rodriguez Cincinnati Reds®",
+              "page": 2
+            },
+            {
+              "id": "BCP-96",
+              "description": "Henry Ramos Kansas City Royals®",
+              "page": 2
+            },
+            {
+              "id": "BCP-97",
+              "description": "Fraymi De Leon Boston Red Sox®",
+              "page": 2
+            },
+            {
+              "id": "BCP-98",
+              "description": "Jorge Burgos Cleveland Guardians™",
+              "page": 2
+            },
+            {
+              "id": "BCP-99",
+              "description": "Yasser Mercedes Minnesota Twins®",
+              "page": 2
+            },
+            {
+              "id": "BCP-100",
+              "description": "Luis Lara Milwaukee Brewers™",
+              "page": 2
+            },
+            {
+              "id": "BCP-101",
+              "description": "Blaze Jordan Boston Red Sox®",
+              "page": 2
+            },
+            {
+              "id": "BCP-102",
+              "description": "Vincent Perozo New York Mets®",
+              "page": 3
+            },
+            {
+              "id": "BCP-103",
+              "description": "Chase DeLauter Cleveland Guardians™",
+              "page": 3
+            },
+            {
+              "id": "BCP-104",
+              "description": "Luisangel Acuña Texas Rangers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-105",
+              "description": "Juan Chacon Boston Red Sox®",
+              "page": 3
+            },
+            {
+              "id": "BCP-106",
+              "description": "Miguel Bleis Boston Red Sox®",
+              "page": 3
+            },
+            {
+              "id": "BCP-107",
+              "description": "Marcelo Mayer Boston Red Sox®",
+              "page": 3
+            },
+            {
+              "id": "BCP-108",
+              "description": "Jacob Berry Miami Marlins®",
+              "page": 3
+            },
+            {
+              "id": "BCP-109",
+              "description": "Gavin Cross Kansas City Royals®",
+              "page": 3
+            },
+            {
+              "id": "BCP-110",
+              "description": "Yhoangel Aponte Toronto Blue Jays®",
+              "page": 3
+            },
+            {
+              "id": "BCP-111",
+              "description": "Josue De Paula Los Angeles Dodgers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-112",
+              "description": "Ronny Simon Tampa Bay Rays™",
+              "page": 3
+            },
+            {
+              "id": "BCP-113",
+              "description": "Abel Bastidas Detroit Tigers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-114",
+              "description": "Daniel Montesino San Diego Padres™",
+              "page": 3
+            },
+            {
+              "id": "BCP-115",
+              "description": "Brock Jones Tampa Bay Rays™",
+              "page": 3
+            },
+            {
+              "id": "BCP-116",
+              "description": "Deyvison De Los Santos Arizona Diamondbacks®",
+              "page": 3
+            },
+            {
+              "id": "BCP-117",
+              "description": "Freili Encarnacion Boston Red Sox®",
+              "page": 3
+            },
+            {
+              "id": "BCP-118",
+              "description": "Lyonell James Boston Red Sox®",
+              "page": 3
+            },
+            {
+              "id": "BCP-119",
+              "description": "Trey Sweeney New York Yankees®",
+              "page": 3
+            },
+            {
+              "id": "BCP-120",
+              "description": "Carlos Jorge Cincinnati Reds®",
+              "page": 3
+            },
+            {
+              "id": "BCP-121",
+              "description": "Yordany De Los Santos Pittsburgh Pirates®",
+              "page": 3
+            },
+            {
+              "id": "BCP-122",
+              "description": "Blake Loubier Boston Red Sox®",
+              "page": 3
+            },
+            {
+              "id": "BCP-123",
+              "description": "Jorge Ruiz Angels®",
+              "page": 3
+            },
+            {
+              "id": "BCP-124",
+              "description": "Robert Perez Jr. Seattle Mariners™",
+              "page": 3
+            },
+            {
+              "id": "BCP-125",
+              "description": "Cam Collier Cincinnati Reds®",
+              "page": 3
+            },
+            {
+              "id": "BCP-126",
+              "description": "Marcus Lee Sang Philadelphia Phillies®",
+              "page": 3
+            },
+            {
+              "id": "BCP-127",
+              "description": "Joshua Baez St. Louis Cardinals®",
+              "page": 3
+            },
+            {
+              "id": "BCP-128",
+              "description": "Emaarion Boyd Philadelphia Phillies®",
+              "page": 3
+            },
+            {
+              "id": "BCP-129",
+              "description": "James Wood Washington Nationals®",
+              "page": 3
+            },
+            {
+              "id": "BCP-130",
+              "description": "Luis Rodriguez St. Louis Cardinals®",
+              "page": 3
+            },
+            {
+              "id": "BCP-131",
+              "description": "Alejandro Osuna Texas Rangers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-132",
+              "description": "Nelson Rada Angels®",
+              "page": 3
+            },
+            {
+              "id": "BCP-133",
+              "description": "Gabriel Gonzalez Seattle Mariners™",
+              "page": 3
+            },
+            {
+              "id": "BCP-134",
+              "description": "Tony Blanco Jr. Pittsburgh Pirates®",
+              "page": 3
+            },
+            {
+              "id": "BCP-135",
+              "description": "Roderick Arias New York Yankees®",
+              "page": 3
+            },
+            {
+              "id": "BCP-136",
+              "description": "Juan Olmos Kansas City Royals®",
+              "page": 3
+            },
+            {
+              "id": "BCP-137",
+              "description": "Juan Alonso Los Angeles Dodgers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-138",
+              "description": "Yeiner Fernandez Los Angeles Dodgers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-139",
+              "description": "Spencer Jones New York Yankees®",
+              "page": 3
+            },
+            {
+              "id": "BCP-140",
+              "description": "Angel Genao Cleveland Guardians™",
+              "page": 3
+            },
+            {
+              "id": "BCP-141",
+              "description": "William Lugo New York Mets®",
+              "page": 3
+            },
+            {
+              "id": "BCP-142",
+              "description": "Yunior Garcia Los Angeles Dodgers®",
+              "page": 3
+            },
+            {
+              "id": "BCP-143",
+              "description": "Dylan O'Rae Milwaukee Brewers™",
+              "page": 3
+            },
+            {
+              "id": "BCP-144",
+              "description": "Colton Cowser Baltimore Orioles®",
+              "page": 3
+            },
+            {
+              "id": "BCP-145",
+              "description": "Xavier Isaac Tampa Bay Rays™",
+              "page": 3
+            },
+            {
+              "id": "BCP-146",
+              "description": "Jase Bowen Pittsburgh Pirates®",
+              "page": 3
+            },
+            {
+              "id": "BCP-147",
+              "description": "Kahlil Watson Miami Marlins®",
+              "page": 3
+            },
+            {
+              "id": "BCP-148",
+              "description": "Kenedy Corona Houston Astros®",
+              "page": 3
+            },
+            {
+              "id": "BCP-149",
+              "description": "Jose Peroza New York Mets®",
+              "page": 3
+            },
+            {
+              "id": "BCP-150",
+              "description": "Jace Avina Milwaukee Brewers™",
+              "page": 3
+            }
+          ],
+          "page": 1,
+          "sectionKind": "Base"
+        },
+        {
+          "id": "f1",
+          "name": "CHROME PROSPECT AUTOGRAPHS",
+          "count": 29,
+          "cards": [
+            {
+              "id": "BSPA-AM",
+              "description": "Andres Mesa Texas Rangers®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-AT",
+              "description": "Ambioris Tavarez Atlanta Braves™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-BL",
+              "description": "Brooks Lee Minnesota Twins®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-CC",
+              "description": "Cam Collier Cincinnati Reds®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-DF",
+              "description": "Dayan Frías Cleveland Guardians™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-DJ",
+              "description": "Druw Jones Arizona Diamondbacks®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-DM",
+              "description": "Daniel Montesino San Diego Padres™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-EG",
+              "description": "Elijah Green Washington Nationals®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-EJ",
+              "description": "Edouard Julien Minnesota Twins®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-HL",
+              "description": "Hao Yu Lee Philadelphia Phillies®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JA",
+              "description": "Jace Avina Milwaukee Brewers™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JB",
+              "description": "Jacob Berry Miami Marlins®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JBZ",
+              "description": "Jesus Baez New York Mets®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JC",
+              "description": "Justin Crawford Philadelphia Phillies®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JCO",
+              "description": "Junior Caminero Tampa Bay Rays™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JH",
+              "description": "Jackson Holliday Baltimore Orioles®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JJ",
+              "description": "Jace Jung Detroit Tigers®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-JR",
+              "description": "Jorge Ruiz Angels®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-KR",
+              "description": "Kumar Rocker Texas Rangers®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-LA",
+              "description": "Leandro Arias Baltimore Orioles®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-LR",
+              "description": "Lizandro Rodriguez Kansas City Royals®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-MA",
+              "description": "Michael Arroyo Seattle Mariners™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-MB",
+              "description": "Manuel Beltre Toronto Blue Jays",
+              "page": 4
+            },
+            {
+              "id": "BSPA-MBS",
+              "description": "Moisés Ballesteros Chicago Cubs®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-MM",
+              "description": "Matt Mervis Chicago Cubs®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-RP",
+              "description": "Robert Perez Jr. Seattle Mariners™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-RSN",
+              "description": "Ronny Simon Tampa Bay Rays™",
+              "page": 4
+            },
+            {
+              "id": "BSPA-TJ",
+              "description": "Termarr Johnson Pittsburgh Pirates®",
+              "page": 4
+            },
+            {
+              "id": "BSPA-ZN",
+              "description": "Zach Neto Angels®",
+              "page": 4
+            }
+          ],
+          "page": 4,
+          "sectionKind": "Autograph / memorabilia"
+        }
+      ],
+      "formats": [
+        "5121 - PACK ODDS"
+      ],
+      "rows": [
+        {
+          "id": "o0",
+          "name": "BASE CARDS AQUA SAPPHIRE",
+          "familyId": "f0",
+          "odds": [
+            "1:10"
+          ],
+          "eligible": null,
+          "serial": 55,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:2"
+          ]
+        },
+        {
+          "id": "o1",
+          "name": "BASE CARDS GREEN SAPPHIRE",
+          "familyId": "f0",
+          "odds": [
+            "1:9"
+          ],
+          "eligible": null,
+          "serial": 60,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:2"
+          ]
+        },
+        {
+          "id": "o2",
+          "name": "BASE CARDS ORANGE SAPPHIRE",
+          "familyId": "f0",
+          "odds": [
+            "1:11"
+          ],
+          "eligible": null,
+          "serial": 50,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:2"
+          ]
+        },
+        {
+          "id": "o3",
+          "name": "BASE CARDS PURPLE SAPPHIRE",
+          "familyId": "f0",
+          "odds": [
+            "1:22"
+          ],
+          "eligible": null,
+          "serial": 25,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:3"
+          ]
+        },
+        {
+          "id": "o4",
+          "name": "BASE CARDS RED SAPPHIRE",
+          "familyId": "f0",
+          "odds": [
+            "1:54"
+          ],
+          "eligible": null,
+          "serial": 10,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:7"
+          ]
+        },
+        {
+          "id": "o5",
+          "name": "BASE CARDS PADPARADSCHA SAPPHIRE",
+          "familyId": "f0",
+          "odds": [
+            "1:526"
+          ],
+          "eligible": null,
+          "serial": 1,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:66"
+          ]
+        },
+        {
+          "id": "o6",
+          "name": "CHROME PROSPECTS AUTO",
+          "familyId": "f1",
+          "odds": [
+            "1:14"
+          ],
+          "eligible": null,
+          "serial": null,
+          "anchor": false,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps NumberedTo blank; no external serial assumed",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:2"
+          ]
+        },
+        {
+          "id": "o7",
+          "name": "CHROME PROSPECTS AUTO AQUA SAPPHIRE",
+          "familyId": "f1",
+          "odds": [
+            "1:53"
+          ],
+          "eligible": null,
+          "serial": 99,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:7"
+          ]
+        },
+        {
+          "id": "o8",
+          "name": "CHROME PROSPECTS AUTO GREEN SAPPHIRE",
+          "familyId": "f1",
+          "odds": [
+            "1:57"
+          ],
+          "eligible": null,
+          "serial": 50,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:8"
+          ]
+        },
+        {
+          "id": "o9",
+          "name": "CHROME PROSPECTS AUTO ORANGE SAPPHIRE",
+          "familyId": "f1",
+          "odds": [
+            "1:112"
+          ],
+          "eligible": null,
+          "serial": 25,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:14"
+          ]
+        },
+        {
+          "id": "o10",
+          "name": "CHROME PROSPECTS AUTO PURPLE SAPPHIRE",
+          "familyId": "f1",
+          "odds": [
+            "1:279"
+          ],
+          "eligible": null,
+          "serial": 10,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:35"
+          ]
+        },
+        {
+          "id": "o11",
+          "name": "CHROME PROSPECTS AUTO RED SAPPHIRE",
+          "familyId": "f1",
+          "odds": [
+            "1:562"
+          ],
+          "eligible": null,
+          "serial": 5,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:71"
+          ]
+        },
+        {
+          "id": "o12",
+          "name": "CHROME PROSPECTS AUTO PADPARADSCHA SAPPHIRE",
+          "familyId": "f1",
+          "odds": [
+            "1:2,830"
+          ],
+          "eligible": null,
+          "serial": 1,
+          "anchor": true,
+          "page": 1,
+          "ambiguous": false,
+          "serialSource": "Official Topps odds PDF NumberedTo",
+          "serialSourceUrl": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "referenceBoxOdds": [
+            "1:354"
+          ]
+        }
+      ],
+      "packTotals": [
+        null
+      ],
+      "aliases": [
+        {
+          "from": "BASE CARDS",
+          "to": "f0"
+        },
+        {
+          "from": "CHROME PROSPECTS AUTO",
+          "to": "f1"
+        }
+      ],
+      "sources": {
+        "checklist": {
+          "name": "checklist.pdf",
+          "pages": [
+            {
+              "number": 1,
+              "rows": [
+                {
+                  "text": "BASE"
+                },
+                {
+                  "text": "CHROME PROSPECTS"
+                },
+                {
+                  "text": "BCP-1 Zack Gelof Oakland Athletics™"
+                },
+                {
+                  "text": "BCP-2 Pedro Ramírez Chicago Cubs®"
+                },
+                {
+                  "text": "BCP-3 Justin Crawford Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-4 Javier Osorio Detroit Tigers®"
+                },
+                {
+                  "text": "BCP-5 Daniel Susac Oakland Athletics™"
+                },
+                {
+                  "text": "BCP-6 Wilber Sanchez Chicago White Sox®"
+                },
+                {
+                  "text": "BCP-7 Mishael Deson Baltimore Orioles®"
+                },
+                {
+                  "text": "BCP-8 Max Wagner Baltimore Orioles®"
+                },
+                {
+                  "text": "BCP-9 Cole Young Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-10 Ryan Clifford Houston Astros®"
+                },
+                {
+                  "text": "BCP-11 Moises Ballesteros Chicago Cubs®"
+                },
+                {
+                  "text": "BCP-12 Jesus Baez New York Mets®"
+                },
+                {
+                  "text": "BCP-13 Oscar Colas Chicago White Sox®"
+                },
+                {
+                  "text": "BCP-14 Henry Davis Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BCP-15 Jonathan Mejia St. Louis Cardinals®"
+                },
+                {
+                  "text": "BCP-16 Drew Gilbert Houston Astros®"
+                },
+                {
+                  "text": "BCP-17 Austin Charles Kansas City Royals®"
+                },
+                {
+                  "text": "BCP-18 Jasson Dominguez New York Yankees®"
+                },
+                {
+                  "text": "BCP-19 Randy De Jesus Angels®"
+                },
+                {
+                  "text": "BCP-20 Jackson Holliday Baltimore Orioles®"
+                },
+                {
+                  "text": "BCP-21 Daniel Guilarte Milwaukee Brewers™"
+                },
+                {
+                  "text": "BCP-22 Dyan Jorge Colorado Rockies™"
+                },
+                {
+                  "text": "BCP-23 Elijah Green Washington Nationals®"
+                },
+                {
+                  "text": "BCP-24 Cristian Hernandez Chicago Cubs®"
+                },
+                {
+                  "text": "BCP-25 Druw Jones Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BCP-26 Dayan Frias Cleveland Guardians™"
+                },
+                {
+                  "text": "BCP-27 Rickardo Perez Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-28 Martin Gonzalez Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-29 Ceddanne Rafaela Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-30 Yanquiel Fernandez Colorado Rockies™"
+                },
+                {
+                  "text": "BCP-31 Brooks Lee Minnesota Twins®"
+                },
+                {
+                  "text": "BCP-32 Colby Thomas Oakland Athletics™"
+                },
+                {
+                  "text": "BCP-33 Ambioris Tavarez Atlanta Braves™"
+                },
+                {
+                  "text": "BCP-34 Abdias De La Cruz Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BCP-35 Frederick Bencosme Baltimore Orioles®"
+                },
+                {
+                  "text": "BCP-36 Logan Wagner Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-37 Bryan Acuña Minnesota Twins®"
+                },
+                {
+                  "text": "BCP-38 Simon Juan New York Mets®"
+                },
+                {
+                  "text": "BCP-39 Kumar Rocker Texas Rangers®"
+                },
+                {
+                  "text": "BCP-40 Kenni Gomez Houston Astros®"
+                },
+                {
+                  "text": "BCP-41 Eric Brown Jr. Milwaukee Brewers™"
+                },
+                {
+                  "text": "BCP-42 Ruben Santana Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BCP-43 Marco Luciano San Francisco Giants®"
+                },
+                {
+                  "text": "BCP-44 Andres Mesa Texas Rangers®"
+                },
+                {
+                  "text": "BCP-45 Gabriel Martinez Toronto Blue Jays®"
+                },
+                {
+                  "text": "BCP-46 Marcos Cabrera New York Yankees®"
+                },
+                {
+                  "text": "BCP-47 Lizandro Rodriguez Kansas City Royals®"
+                },
+                {
+                  "text": "BCP-48 Colson Montgomery Chicago White Sox®"
+                },
+                {
+                  "text": "BCP-49 Jett Williams New York Mets®"
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "rows": [
+                {
+                  "text": "BCP-50 Alex Ramirez New York Mets®"
+                },
+                {
+                  "text": "BCP-51 Justyn-Henry Malloy Atlanta Braves™"
+                },
+                {
+                  "text": "BCP-52 Hao Yu Lee Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-53 Jace Jung Detroit Tigers®"
+                },
+                {
+                  "text": "BCP-54 Cristhian Vaquero Washington Nationals®"
+                },
+                {
+                  "text": "BCP-55 Mairoshendrick Martinus Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-56 Christian Cerda Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BCP-57 Peyton Graham Detroit Tigers®"
+                },
+                {
+                  "text": "BCP-58 Lazaro Montes Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-59 Gleider Figuereo Texas Rangers®"
+                },
+                {
+                  "text": "BCP-60 Aeverson Arteaga San Francisco Giants®"
+                },
+                {
+                  "text": "BCP-61 Junior Caminero Tampa Bay Rays™"
+                },
+                {
+                  "text": "BCP-62 Antony Peguero Miami Marlins®"
+                },
+                {
+                  "text": "BCP-63 Michael Arroyo Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-64 Zach Neto Angels®"
+                },
+                {
+                  "text": "BCP-65 Elly De LA Cruz Cincinnati Reds®"
+                },
+                {
+                  "text": "BCP-66 Edwin Arroyo Cincinnati Reds®"
+                },
+                {
+                  "text": "BCP-67 William Bergolla Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-68 Brady House Washington Nationals®"
+                },
+                {
+                  "text": "BCP-69 Mikey Romero Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-70 Jefferson Rojas Chicago Cubs®"
+                },
+                {
+                  "text": "BCP-71 Roman Anthony Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-72 Yoffry Solano Miami Marlins®"
+                },
+                {
+                  "text": "BCP-73 Axel Sanchez Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-74 Matt Mervis Chicago Cubs®"
+                },
+                {
+                  "text": "BCP-75 Samuel Zavala San Diego Padres™"
+                },
+                {
+                  "text": "BCP-76 Jackson Chourio Milwaukee Brewers™"
+                },
+                {
+                  "text": "BCP-77 Juan Brito Colorado Rockies™"
+                },
+                {
+                  "text": "BCP-78 Ariel Almonte Cincinnati Reds®"
+                },
+                {
+                  "text": "BCP-79 Manuel Beltre Toronto Blue Jays®"
+                },
+                {
+                  "text": "BCP-80 Samuel Munoz Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-81 Nerwilian Cedeno San Diego Padres™"
+                },
+                {
+                  "text": "BCP-82 Edouard Julien Minnesota Twins®"
+                },
+                {
+                  "text": "BCP-83 Jaison Chourio Cleveland Guardians™"
+                },
+                {
+                  "text": "BCP-84 Leandro Arias Baltimore Orioles®"
+                },
+                {
+                  "text": "BCP-85 Anthony Gutierrez Texas Rangers®"
+                },
+                {
+                  "text": "BCP-86 Yilber Herrera Minnesota Twins®"
+                },
+                {
+                  "text": "BCP-87 Max Muncy Oakland Athletics™"
+                },
+                {
+                  "text": "BCP-88 Termarr Johnson Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BCP-89 Nikau Pouaka-Grego Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-90 Braylon Bishop Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BCP-91 Kevin Parada New York Mets®"
+                },
+                {
+                  "text": "BCP-92 Jordan Lawlar Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BCP-93 Kyle Harrison San Francisco Giants®"
+                },
+                {
+                  "text": "BCP-94 Luis Garcia Toronto Blue Jays®"
+                },
+                {
+                  "text": "BCP-95 Hector Rodriguez Cincinnati Reds®"
+                },
+                {
+                  "text": "BCP-96 Henry Ramos Kansas City Royals®"
+                },
+                {
+                  "text": "BCP-97 Fraymi De Leon Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-98 Jorge Burgos Cleveland Guardians™"
+                },
+                {
+                  "text": "BCP-99 Yasser Mercedes Minnesota Twins®"
+                },
+                {
+                  "text": "BCP-100 Luis Lara Milwaukee Brewers™"
+                },
+                {
+                  "text": "BCP-101 Blaze Jordan Boston Red Sox®"
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "rows": [
+                {
+                  "text": "BCP-102 Vincent Perozo New York Mets®"
+                },
+                {
+                  "text": "BCP-103 Chase DeLauter Cleveland Guardians™"
+                },
+                {
+                  "text": "BCP-104 Luisangel Acuña Texas Rangers®"
+                },
+                {
+                  "text": "BCP-105 Juan Chacon Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-106 Miguel Bleis Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-107 Marcelo Mayer Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-108 Jacob Berry Miami Marlins®"
+                },
+                {
+                  "text": "BCP-109 Gavin Cross Kansas City Royals®"
+                },
+                {
+                  "text": "BCP-110 Yhoangel Aponte Toronto Blue Jays®"
+                },
+                {
+                  "text": "BCP-111 Josue De Paula Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-112 Ronny Simon Tampa Bay Rays™"
+                },
+                {
+                  "text": "BCP-113 Abel Bastidas Detroit Tigers®"
+                },
+                {
+                  "text": "BCP-114 Daniel Montesino San Diego Padres™"
+                },
+                {
+                  "text": "BCP-115 Brock Jones Tampa Bay Rays™"
+                },
+                {
+                  "text": "BCP-116 Deyvison De Los Santos Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BCP-117 Freili Encarnacion Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-118 Lyonell James Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-119 Trey Sweeney New York Yankees®"
+                },
+                {
+                  "text": "BCP-120 Carlos Jorge Cincinnati Reds®"
+                },
+                {
+                  "text": "BCP-121 Yordany De Los Santos Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BCP-122 Blake Loubier Boston Red Sox®"
+                },
+                {
+                  "text": "BCP-123 Jorge Ruiz Angels®"
+                },
+                {
+                  "text": "BCP-124 Robert Perez Jr. Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-125 Cam Collier Cincinnati Reds®"
+                },
+                {
+                  "text": "BCP-126 Marcus Lee Sang Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-127 Joshua Baez St. Louis Cardinals®"
+                },
+                {
+                  "text": "BCP-128 Emaarion Boyd Philadelphia Phillies®"
+                },
+                {
+                  "text": "BCP-129 James Wood Washington Nationals®"
+                },
+                {
+                  "text": "BCP-130 Luis Rodriguez St. Louis Cardinals®"
+                },
+                {
+                  "text": "BCP-131 Alejandro Osuna Texas Rangers®"
+                },
+                {
+                  "text": "BCP-132 Nelson Rada Angels®"
+                },
+                {
+                  "text": "BCP-133 Gabriel Gonzalez Seattle Mariners™"
+                },
+                {
+                  "text": "BCP-134 Tony Blanco Jr. Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BCP-135 Roderick Arias New York Yankees®"
+                },
+                {
+                  "text": "BCP-136 Juan Olmos Kansas City Royals®"
+                },
+                {
+                  "text": "BCP-137 Juan Alonso Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-138 Yeiner Fernandez Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-139 Spencer Jones New York Yankees®"
+                },
+                {
+                  "text": "BCP-140 Angel Genao Cleveland Guardians™"
+                },
+                {
+                  "text": "BCP-141 William Lugo New York Mets®"
+                },
+                {
+                  "text": "BCP-142 Yunior Garcia Los Angeles Dodgers®"
+                },
+                {
+                  "text": "BCP-143 Dylan O'Rae Milwaukee Brewers™"
+                },
+                {
+                  "text": "BCP-144 Colton Cowser Baltimore Orioles®"
+                },
+                {
+                  "text": "BCP-145 Xavier Isaac Tampa Bay Rays™"
+                },
+                {
+                  "text": "BCP-146 Jase Bowen Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BCP-147 Kahlil Watson Miami Marlins®"
+                },
+                {
+                  "text": "BCP-148 Kenedy Corona Houston Astros®"
+                },
+                {
+                  "text": "BCP-149 Jose Peroza New York Mets®"
+                },
+                {
+                  "text": "BCP-150 Jace Avina Milwaukee Brewers™"
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "rows": [
+                {
+                  "text": "AUTOGRAPH"
+                },
+                {
+                  "text": "CHROME PROSPECT AUTOGRAPHS"
+                },
+                {
+                  "text": "BSPA-AM Andres Mesa Texas Rangers®"
+                },
+                {
+                  "text": "BSPA-AT Ambioris Tavarez Atlanta Braves™"
+                },
+                {
+                  "text": "BSPA-BL Brooks Lee Minnesota Twins®"
+                },
+                {
+                  "text": "BSPA-CC Cam Collier Cincinnati Reds®"
+                },
+                {
+                  "text": "BSPA-DF Dayan Frías Cleveland Guardians™"
+                },
+                {
+                  "text": "BSPA-DJ Druw Jones Arizona Diamondbacks®"
+                },
+                {
+                  "text": "BSPA-DM Daniel Montesino San Diego Padres™"
+                },
+                {
+                  "text": "BSPA-EG Elijah Green Washington Nationals®"
+                },
+                {
+                  "text": "BSPA-EJ Edouard Julien Minnesota Twins®"
+                },
+                {
+                  "text": "BSPA-HL Hao Yu Lee Philadelphia Phillies®"
+                },
+                {
+                  "text": "BSPA-JA Jace Avina Milwaukee Brewers™"
+                },
+                {
+                  "text": "BSPA-JB Jacob Berry Miami Marlins®"
+                },
+                {
+                  "text": "BSPA-JBZ Jesus Baez New York Mets®"
+                },
+                {
+                  "text": "BSPA-JC Justin Crawford Philadelphia Phillies®"
+                },
+                {
+                  "text": "BSPA-JCO Junior Caminero Tampa Bay Rays™"
+                },
+                {
+                  "text": "BSPA-JH Jackson Holliday Baltimore Orioles®"
+                },
+                {
+                  "text": "BSPA-JJ Jace Jung Detroit Tigers®"
+                },
+                {
+                  "text": "BSPA-JR Jorge Ruiz Angels®"
+                },
+                {
+                  "text": "BSPA-KR Kumar Rocker Texas Rangers®"
+                },
+                {
+                  "text": "BSPA-LA Leandro Arias Baltimore Orioles®"
+                },
+                {
+                  "text": "BSPA-LR Lizandro Rodriguez Kansas City Royals®"
+                },
+                {
+                  "text": "BSPA-MA Michael Arroyo Seattle Mariners™"
+                },
+                {
+                  "text": "BSPA-MB Manuel Beltre Toronto Blue Jays"
+                },
+                {
+                  "text": "BSPA-MBS Moisés Ballesteros Chicago Cubs®"
+                },
+                {
+                  "text": "BSPA-MM Matt Mervis Chicago Cubs®"
+                },
+                {
+                  "text": "BSPA-RP Robert Perez Jr. Seattle Mariners™"
+                },
+                {
+                  "text": "BSPA-RSN Ronny Simon Tampa Bay Rays™"
+                },
+                {
+                  "text": "BSPA-TJ Termarr Johnson Pittsburgh Pirates®"
+                },
+                {
+                  "text": "BSPA-ZN Zach Neto Angels®"
+                }
+              ]
+            }
+          ],
+          "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023BowmanSapphireBaseballChecklist.pdf",
+          "sha256": "f8b0abe788b583c79477b4337c9e5f653701d1c9b78e13e891f1554e1902bb34"
+        },
+        "odds": {
+          "name": "odds.pdf",
+          "pages": [
+            {
+              "number": 1,
+              "rows": [
+                {
+                  "text": "2023 Bowman Sapphire Edition"
+                },
+                {
+                  "text": "Component Description NumberedTo 5121 - PACK ODDS 5121 - BOX ODDS"
+                },
+                {
+                  "text": "BASE CARDS AQUA SAPPHIRE 55 1:10 1:2"
+                },
+                {
+                  "text": "BASE CARDS GREEN SAPPHIRE 60 1:9 1:2"
+                },
+                {
+                  "text": "BASE CARDS ORANGE SAPPHIRE 50 1:11 1:2"
+                },
+                {
+                  "text": "BASE CARDS PURPLE SAPPHIRE 25 1:22 1:3"
+                },
+                {
+                  "text": "BASE CARDS RED SAPPHIRE 10 1:54 1:7"
+                },
+                {
+                  "text": "BASE CARDS PADPARADSCHA SAPPHIRE 1 1:526 1:66"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO 1:14 1:2"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO AQUA SAPPHIRE 99 1:53 1:7"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO GREEN SAPPHIRE 50 1:57 1:8"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO ORANGE SAPPHIRE 25 1:112 1:14"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO PURPLE SAPPHIRE 10 1:279 1:35"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO RED SAPPHIRE 5 1:562 1:71"
+                },
+                {
+                  "text": "CHROME PROSPECTS AUTO PADPARADSCHA SAPPHIRE 1 1:2,830 1:354"
+                }
+              ]
+            }
+          ],
+          "url": "https://cdn.shopify.com/s/files/1/0662/9749/5709/files/2023_Bowman_Sapphire_Edition_Odds.pdf",
+          "sha256": "57fb28bfadcdd6c91df69c743fb064bc27c1da6e4ebe741c5eabc7c5a6b31163"
+        }
+      },
+      "warnings": [],
+      "formatConfigs": {},
+      "allowScenario": false,
+      "robustWeights": false,
+      "roundingWeights": false,
+      "oddsBlocking": false
+    },
+    "calculation": {
+      "formatChecks": [
+        {
+          "format": "5121 - PACK ODDS",
+          "cardsPerPack": null,
+          "packsPerBox": null,
+          "boxes": null,
+          "listedCardsPerPack": 0.49038027942398954,
+          "source": "",
+          "boundaryZero": false
+        }
+      ],
+      "packTotals": [
+        81780
+      ],
+      "methodUsed": "median",
+      "packRange": [
+        {
+          "min": 78900,
+          "max": 152163,
+          "median": 81780,
+          "anchors": 12
+        }
+      ],
+      "packImplications": [
+        [
+          {
+            "id": "o5",
+            "name": "BASE CARDS PADPARADSCHA SAPPHIRE",
+            "weight": 10,
+            "packs": 78900
+          },
+          {
+            "id": "o10",
+            "name": "CHROME PROSPECTS AUTO PURPLE SAPPHIRE",
+            "weight": 1,
+            "packs": 80910
+          },
+          {
+            "id": "o1",
+            "name": "BASE CARDS GREEN SAPPHIRE",
+            "weight": 10,
+            "packs": 81000
+          },
+          {
+            "id": "o4",
+            "name": "BASE CARDS RED SAPPHIRE",
+            "weight": 10,
+            "packs": 81000
+          },
+          {
+            "id": "o9",
+            "name": "CHROME PROSPECTS AUTO ORANGE SAPPHIRE",
+            "weight": 1,
+            "packs": 81200
+          },
+          {
+            "id": "o11",
+            "name": "CHROME PROSPECTS AUTO RED SAPPHIRE",
+            "weight": 1,
+            "packs": 81490
+          },
+          {
+            "id": "o12",
+            "name": "CHROME PROSPECTS AUTO PADPARADSCHA SAPPHIRE",
+            "weight": 1,
+            "packs": 82070
+          },
+          {
+            "id": "o0",
+            "name": "BASE CARDS AQUA SAPPHIRE",
+            "weight": 10,
+            "packs": 82500
+          },
+          {
+            "id": "o2",
+            "name": "BASE CARDS ORANGE SAPPHIRE",
+            "weight": 10,
+            "packs": 82500
+          },
+          {
+            "id": "o3",
+            "name": "BASE CARDS PURPLE SAPPHIRE",
+            "weight": 10,
+            "packs": 82500
+          },
+          {
+            "id": "o8",
+            "name": "CHROME PROSPECTS AUTO GREEN SAPPHIRE",
+            "weight": 1,
+            "packs": 82650
+          },
+          {
+            "id": "o7",
+            "name": "CHROME PROSPECTS AUTO AQUA SAPPHIRE",
+            "weight": 1,
+            "packs": 152163
+          }
+        ]
+      ],
+      "identifiable": true,
+      "fullRank": true,
+      "wellConditioned": true,
+      "converged": true,
+      "conditioning": 1,
+      "valid": true,
+      "hasEstimate": true,
+      "diagnostics": [
+        {
+          "id": "o0",
+          "name": "BASE CARDS AQUA SAPPHIRE",
+          "count": 150,
+          "serial": 55,
+          "total": 8250,
+          "rates": [
+            0.1
+          ],
+          "kind": "Base",
+          "defaultWeight": 10,
+          "source": "section",
+          "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+          "weight": 10,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 10,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 10,
+          "downweighted": false,
+          "predicted": 8178,
+          "error": 0.008727272727272728,
+          "impliedEligible": 148.6909090909091,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o1",
+          "name": "BASE CARDS GREEN SAPPHIRE",
+          "count": 150,
+          "serial": 60,
+          "total": 9000,
+          "rates": [
+            0.1111111111111111
+          ],
+          "kind": "Base",
+          "defaultWeight": 10,
+          "source": "section",
+          "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+          "weight": 10,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 10,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 10,
+          "downweighted": false,
+          "predicted": 9086.666666666666,
+          "error": 0.009629629629629563,
+          "impliedEligible": 151.44444444444443,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o2",
+          "name": "BASE CARDS ORANGE SAPPHIRE",
+          "count": 150,
+          "serial": 50,
+          "total": 7500,
+          "rates": [
+            0.09090909090909091
+          ],
+          "kind": "Base",
+          "defaultWeight": 10,
+          "source": "section",
+          "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+          "weight": 10,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 10,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 10,
+          "downweighted": false,
+          "predicted": 7434.545454545455,
+          "error": 0.008727272727272672,
+          "impliedEligible": 148.6909090909091,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o3",
+          "name": "BASE CARDS PURPLE SAPPHIRE",
+          "count": 150,
+          "serial": 25,
+          "total": 3750,
+          "rates": [
+            0.045454545454545456
+          ],
+          "kind": "Base",
+          "defaultWeight": 10,
+          "source": "section",
+          "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+          "weight": 10,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 10,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 10,
+          "downweighted": false,
+          "predicted": 3717.2727272727275,
+          "error": 0.008727272727272672,
+          "impliedEligible": 148.6909090909091,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o4",
+          "name": "BASE CARDS RED SAPPHIRE",
+          "count": 150,
+          "serial": 10,
+          "total": 1500,
+          "rates": [
+            0.018518518518518517
+          ],
+          "kind": "Base",
+          "defaultWeight": 10,
+          "source": "section",
+          "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+          "weight": 10,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 10,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 10,
+          "downweighted": false,
+          "predicted": 1514.4444444444443,
+          "error": 0.009629629629629563,
+          "impliedEligible": 151.44444444444443,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o5",
+          "name": "BASE CARDS PADPARADSCHA SAPPHIRE",
+          "count": 150,
+          "serial": 1,
+          "total": 150,
+          "rates": [
+            0.0019011406844106464
+          ],
+          "kind": "Base",
+          "defaultWeight": 10,
+          "source": "section",
+          "reason": "Higher starting weight for ordinary printed cards; published odds can still be wrong.",
+          "weight": 10,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 10,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 10,
+          "downweighted": false,
+          "predicted": 155.47528517110266,
+          "error": 0.03650190114068437,
+          "impliedEligible": 155.47528517110266,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o7",
+          "name": "CHROME PROSPECTS AUTO AQUA SAPPHIRE",
+          "count": 29,
+          "serial": 99,
+          "total": 2871,
+          "rates": [
+            0.018867924528301886
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 1543.0188679245282,
+          "error": 0.46255002858776445,
+          "impliedEligible": 15.58604917095483,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o8",
+          "name": "CHROME PROSPECTS AUTO GREEN SAPPHIRE",
+          "count": 29,
+          "serial": 50,
+          "total": 1450,
+          "rates": [
+            0.017543859649122806
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 1434.7368421052631,
+          "error": 0.010526315789473708,
+          "impliedEligible": 28.69473684210526,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o9",
+          "name": "CHROME PROSPECTS AUTO ORANGE SAPPHIRE",
+          "count": 29,
+          "serial": 25,
+          "total": 725,
+          "rates": [
+            0.008928571428571428
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 730.1785714285714,
+          "error": 0.007142857142857165,
+          "impliedEligible": 29.20714285714286,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o10",
+          "name": "CHROME PROSPECTS AUTO PURPLE SAPPHIRE",
+          "count": 29,
+          "serial": 10,
+          "total": 290,
+          "rates": [
+            0.0035842293906810036
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 293.1182795698925,
+          "error": 0.010752688172043032,
+          "impliedEligible": 29.311827956989248,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o11",
+          "name": "CHROME PROSPECTS AUTO RED SAPPHIRE",
+          "count": 29,
+          "serial": 5,
+          "total": 145,
+          "rates": [
+            0.0017793594306049821
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 145.51601423487543,
+          "error": 0.0035587188612098467,
+          "impliedEligible": 29.103202846975087,
+          "exclusionReason": ""
+        },
+        {
+          "id": "o12",
+          "name": "CHROME PROSPECTS AUTO PADPARADSCHA SAPPHIRE",
+          "count": 29,
+          "serial": 1,
+          "total": 29,
+          "rates": [
+            0.00035335689045936394
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 28.897526501766784,
+          "error": 0.0035335689045936647,
+          "impliedEligible": 28.897526501766784,
+          "exclusionReason": ""
+        }
+      ],
+      "conflicts": [
+        {
+          "id": "o7",
+          "name": "CHROME PROSPECTS AUTO AQUA SAPPHIRE",
+          "count": 29,
+          "serial": 99,
+          "total": 2871,
+          "rates": [
+            0.018867924528301886
+          ],
+          "kind": "Autograph / memorabilia",
+          "defaultWeight": 1,
+          "source": "section",
+          "reason": "The checklist lists this family under an autograph/relic section; membership can vary by parallel.",
+          "weight": 1,
+          "enabled": true,
+          "precisionFactor": 1,
+          "priorWeight": 1,
+          "participation": "median",
+          "used": true,
+          "effectiveWeight": 1,
+          "downweighted": false,
+          "predicted": 1543.0188679245282,
+          "error": 0.46255002858776445,
+          "impliedEligible": 15.58604917095483
+        }
+      ],
+      "errors": [],
+      "rowIssues": [],
+      "derivedIssues": 0,
+      "results": [
+        {
+          "id": "o0",
+          "name": "BASE CARDS AQUA SAPPHIRE",
+          "family": "CHROME PROSPECTS",
+          "familyId": "f0",
+          "count": 150,
+          "serial": 55,
+          "byFormat": [
+            8178
+          ],
+          "total": 8178,
+          "perCard": 54.52,
+          "page": 1,
+          "kind": "Base",
+          "issue": null
+        },
+        {
+          "id": "o1",
+          "name": "BASE CARDS GREEN SAPPHIRE",
+          "family": "CHROME PROSPECTS",
+          "familyId": "f0",
+          "count": 150,
+          "serial": 60,
+          "byFormat": [
+            9086.666666666666
+          ],
+          "total": 9086.666666666666,
+          "perCard": 60.577777777777776,
+          "page": 1,
+          "kind": "Base",
+          "issue": null
+        },
+        {
+          "id": "o2",
+          "name": "BASE CARDS ORANGE SAPPHIRE",
+          "family": "CHROME PROSPECTS",
+          "familyId": "f0",
+          "count": 150,
+          "serial": 50,
+          "byFormat": [
+            7434.545454545455
+          ],
+          "total": 7434.545454545455,
+          "perCard": 49.56363636363637,
+          "page": 1,
+          "kind": "Base",
+          "issue": null
+        },
+        {
+          "id": "o3",
+          "name": "BASE CARDS PURPLE SAPPHIRE",
+          "family": "CHROME PROSPECTS",
+          "familyId": "f0",
+          "count": 150,
+          "serial": 25,
+          "byFormat": [
+            3717.2727272727275
+          ],
+          "total": 3717.2727272727275,
+          "perCard": 24.781818181818185,
+          "page": 1,
+          "kind": "Base",
+          "issue": null
+        },
+        {
+          "id": "o4",
+          "name": "BASE CARDS RED SAPPHIRE",
+          "family": "CHROME PROSPECTS",
+          "familyId": "f0",
+          "count": 150,
+          "serial": 10,
+          "byFormat": [
+            1514.4444444444443
+          ],
+          "total": 1514.4444444444443,
+          "perCard": 10.096296296296295,
+          "page": 1,
+          "kind": "Base",
+          "issue": null
+        },
+        {
+          "id": "o5",
+          "name": "BASE CARDS PADPARADSCHA SAPPHIRE",
+          "family": "CHROME PROSPECTS",
+          "familyId": "f0",
+          "count": 150,
+          "serial": 1,
+          "byFormat": [
+            155.47528517110266
+          ],
+          "total": 155.47528517110266,
+          "perCard": 1.0365019011406844,
+          "page": 1,
+          "kind": "Base",
+          "issue": null
+        },
+        {
+          "id": "o6",
+          "name": "CHROME PROSPECTS AUTO",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": null,
+          "byFormat": [
+            5841.428571428572
+          ],
+          "total": 5841.428571428572,
+          "perCard": 201.42857142857144,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        },
+        {
+          "id": "o7",
+          "name": "CHROME PROSPECTS AUTO AQUA SAPPHIRE",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": 99,
+          "byFormat": [
+            1543.0188679245282
+          ],
+          "total": 1543.0188679245282,
+          "perCard": 53.20754716981132,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        },
+        {
+          "id": "o8",
+          "name": "CHROME PROSPECTS AUTO GREEN SAPPHIRE",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": 50,
+          "byFormat": [
+            1434.7368421052631
+          ],
+          "total": 1434.7368421052631,
+          "perCard": 49.473684210526315,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        },
+        {
+          "id": "o9",
+          "name": "CHROME PROSPECTS AUTO ORANGE SAPPHIRE",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": 25,
+          "byFormat": [
+            730.1785714285714
+          ],
+          "total": 730.1785714285714,
+          "perCard": 25.17857142857143,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        },
+        {
+          "id": "o10",
+          "name": "CHROME PROSPECTS AUTO PURPLE SAPPHIRE",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": 10,
+          "byFormat": [
+            293.1182795698925
+          ],
+          "total": 293.1182795698925,
+          "perCard": 10.10752688172043,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        },
+        {
+          "id": "o11",
+          "name": "CHROME PROSPECTS AUTO RED SAPPHIRE",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": 5,
+          "byFormat": [
+            145.51601423487543
+          ],
+          "total": 145.51601423487543,
+          "perCard": 5.017793594306049,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        },
+        {
+          "id": "o12",
+          "name": "CHROME PROSPECTS AUTO PADPARADSCHA SAPPHIRE",
+          "family": "CHROME PROSPECT AUTOGRAPHS",
+          "familyId": "f1",
+          "count": 29,
+          "serial": 1,
+          "byFormat": [
+            28.897526501766784
+          ],
+          "total": 28.897526501766784,
+          "perCard": 0.9964664310954063,
+          "page": 1,
+          "kind": "Autograph / memorabilia",
+          "issue": null
+        }
+      ],
+      "scenario": true,
+      "provisional": true,
+      "robustConverged": true,
+      "assumptions": "Default model: each format’s pack total is the WEIGHTED MEDIAN of its numbered anchors’ implied packs (implied packs = eligible subjects × serial × odds, less any fixed-format contribution), weighted by each anchor’s influence so base/insert anchors outweigh autograph/memorabilia. Each parallel’s estimate = packs ÷ odds ÷ eligible subjects. A dash means unavailable; anchors with an infeasible implied pool are excluded. These are estimates from published odds anchored on known serial numbers, not manufacturer-confirmed totals.",
+      "usedAnchors": 12,
+      "enabledAnchors": 12
+    }
+  },
+  "lab_validation": {
+    "status": "PASS",
+    "validator": "authoritative-staging-v1",
+    "artifact_sha256": "9c1375a885934f8a346bcced0309bd9c534e3fb476d7ed9855f3d6e90ab32cb3",
+    "cv_sha256": "668d78c1fe9f073354d4a1aa0891f16b82f619a92e5b04ddcc40bc60f54252aa",
+    "engine_sha256": "6cdac98700c0f07d479532729a9515fe4e59f157e237570bd628c731aece3709",
+    "stability": {
+      "name": "leave-one-anchor-out stability",
+      "max_relative_change": 0.05,
+      "anchors_tested": 12,
+      "invalid_refits": [],
+      "relic_handling": "hold"
+    },
+    "admitted_rows": [
+      "o0",
+      "o1",
+      "o2",
+      "o3",
+      "o4",
+      "o5",
+      "o6",
+      "o7",
+      "o8",
+      "o9",
+      "o10",
+      "o11",
+      "o12"
+    ],
+    "scope": "isolated staging; no production admission"
+  },
+  "replaces_source": {
+    "source_fingerprint": "6478c7ba656097741ba7a4592ef9360efad0a20faeefadaca8ebc64108c8d14e",
+    "reason": "STAGING ONLY: consume authoritative frozen Lab result; historical artifact and production source unchanged."
+  }
+}

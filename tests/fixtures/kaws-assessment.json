@@ -1,0 +1,15 @@
+{
+  "policy_version": "prv-confidence-v1",
+  "claim_id": "kaws-2026-orange-published-pack-odds",
+  "claim_kind": "official_pack_odds",
+  "product_code": "2026_topps_mlb_x_kaws_baseball",
+  "state": "Verified",
+  "reasons": [],
+  "claim_sha256": "68fe3ce55876033303d1fd9f3e50684a4c801d621bb83c28c3022ff302a1978e",
+  "production_auto_eligible": true,
+  "production_auto_authorized": false,
+  "scientifically_publishable_to_staging": true,
+  "research_only": false,
+  "label_required": "Verified",
+  "scientific_assessment_is_not_write_authorization": true
+}
