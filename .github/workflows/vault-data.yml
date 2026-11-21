@@ -164,6 +164,7 @@ jobs:
             /scripts/content-release.cjs
             /scripts/qualification-target.cjs
             /.qualification/target.json
+            /data/qualification-case.json
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:

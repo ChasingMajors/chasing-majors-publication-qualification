@@ -1,5 +1,5 @@
 'use strict';
-const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),cp=require('node:child_process');
 const q=require('../scripts/qualification-target.cjs');
 const fixture=()=>({schema_version:1,environment:'isolated-publication-qualification',qualified_resource_setup:true,repository:q.REPOSITORY,repository_id:1234567,branch:'main',origin:q.ORIGIN,production_writes_enabled:false,setup_evidence_sha256:'a'.repeat(64)});
 const ctx=()=>({GITHUB_REPOSITORY:q.REPOSITORY,GITHUB_REPOSITORY_ID:'1234567',GITHUB_REF:'refs/heads/main'});
@@ -24,4 +24,18 @@ test('candidate preserves the complete shared release topology and least permiss
  for(const command of ['scripts/ensure-release-history.cjs','scripts/build-content-release.cjs','scripts/search-query/reuse.cjs key','scripts/search-query/reuse.cjs run','scripts/search-query/reuse.cjs save','node --test tests/*.test.cjs','scripts/content-release.cjs validate','scripts/content-release.cjs assemble','scripts/content-release.cjs verify','actions/upload-pages-artifact@v4','actions/deploy-pages@v4','persist-credentials: false','node-version: \'24.22.1\''])assert.ok(yaml.includes(command),command);
  assert.ok(yaml.indexOf('qualification-target.cjs cname')<yaml.indexOf('scripts/content-release.cjs assemble'));assert.ok(yaml.indexOf('qualification-target.cjs edge')<yaml.indexOf('Injected isolated post-deployment failure'));
  assert.doesNotMatch(yaml,/contents: write|actions: write|secrets\.CF|CLOUDFLARE_API_TOKEN|schedule:/);assert.match(yaml,/pages: write/);assert.match(yaml,/id-token: write/);
+});
+
+test('actual verifier sparse checkout executes normal and rollback probe modes; missing case fails closed',()=>{
+ const root=path.resolve(__dirname,'..'),workflow=fs.readFileSync(path.join(root,'.github/workflows/vault-data.yml'),'utf8');
+ const verify=workflow.split('\n  verify:')[1],block=verify.match(/sparse-checkout: *\|\n((?: {12}[^\n]+\n)+)/);assert.ok(block,'verifier sparse checkout');
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'cm-verifier-closure-'));
+ try{
+  for(const line of block[1].trim().split('\n')){const rel=line.trim().replace(/^\//,'');const target=path.join(tmp,rel);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,rel),target);}
+  const caseFile=path.join(tmp,'data/qualification-case.json');assert.ok(fs.existsSync(caseFile),'case file must be in SHA-pinned verifier checkout');
+  fs.writeFileSync(path.join(tmp,'.qualification/target.json'),JSON.stringify(fixture()));
+  const command=()=>cp.execFileSync(process.execPath,[path.join(tmp,'scripts/qualification-target.cjs'),'probe'],{cwd:tmp,env:{...process.env,...ctx()},encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
+  for(const mode of ['normal','postdeploy-failure-probe']){fs.writeFileSync(caseFile,JSON.stringify({schema_version:1,environment:'isolated-publication-qualification',mode}));assert.equal(command(),mode);}
+  fs.unlinkSync(caseFile);assert.throws(command,/qualification-case/);
+ }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });

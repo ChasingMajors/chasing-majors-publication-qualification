@@ -30,6 +30,6 @@ test('wrong checkout SHA and malformed before SHA fail closed; dispatch has no i
 }));
 test('verifier checkout is SHA-pinned to its complete isolated helper/target closure; critical code stays intact',()=>{
  const workflow=fs.readFileSync('.github/workflows/vault-data.yml','utf8'),verify=workflow.split('\n  verify:')[1];
- for(const item of ['ref: ${{ github.sha }}','fetch-depth: 1','sparse-checkout-cone-mode: false','/scripts/content-release.cjs','/scripts/qualification-target.cjs','/.qualification/target.json','persist-credentials: false'])assert(verify.includes(item),item);
+ for(const item of ['ref: ${{ github.sha }}','fetch-depth: 1','sparse-checkout-cone-mode: false','/scripts/content-release.cjs','/scripts/qualification-target.cjs','/.qualification/target.json','/data/qualification-case.json','persist-credentials: false'])assert(verify.includes(item),item);
  assert(workflow.includes('node scripts/ensure-release-history.cjs\n          node scripts/content-release.cjs expected'));
 });
