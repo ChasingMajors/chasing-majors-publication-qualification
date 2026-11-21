@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "environment": "isolated-publication-qualification",
-  "qualified_resource_setup": false,
+  "qualified_resource_setup": true,
   "repository": "ChasingMajors/chasing-majors-publication-qualification",
-  "repository_id": null,
+  "repository_id": 1466656507,
   "branch": "main",
   "origin": "https://prv-qualification.chasingmajors.com/",
   "production_writes_enabled": false,
-  "setup_evidence_sha256": null
+  "setup_evidence_sha256": "89612832693d3935ea4805315dd011130da6e5588f03a1b59354ba5b8376e6f2"
 }
