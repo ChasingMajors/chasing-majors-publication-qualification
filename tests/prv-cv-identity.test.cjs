@@ -1,7 +1,7 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs'),vm=require('node:vm');
-const {standardize}=require('./prv-cv-identity.cjs');
+const {standardize}=require('../shared/prv-cv-identity.cjs');
 const cv={Code:'canonical',DisplayName:'2026 Example Baseball',year:'2026',sport:'baseball',manufacturer:'Topps',product:'Example'};
 const record=(code='old')=>({entry:{...cv,Code:code,sport:'Baseball',product:'old family'},product:{meta:{code},rows:[{id:code+':row:1',product_id:code,group_id:code+':base',measurement:{value:20},serial_limit:99,checklist_size:10,raw:{code}}]}});
 test('canonical metadata and identifiers retain quantities, original rows and input objects',()=>{
@@ -44,7 +44,7 @@ test('reviewed catalog identities preserve actual CV absence and can correct spo
 test('all reviewed targets exist once and a distinct Cactus Jack edition is never merged with All-Star',()=>{
  const policy=JSON.parse(fs.readFileSync('data/prv-cv-identity-policy.json'));
  const cvIndex=JSON.parse(fs.readFileSync('data/v1/checklists/index.json')).index;
- const registry=cvIndex.concat(policy.catalog_products||[]);
+ const registry=standardize([],cvIndex,policy).registry;
  for(const review of policy.reviewed_mappings||[])assert.equal(registry.filter(c=>c.Code===review.canonical_code).length,1,review.canonical_code);
  const cactus=(policy.reviewed_mappings||[]).find(r=>r.source.Code==='2025_26_topps_chrome_cactus_jack_basketball_basketball');
  assert.ok(cactus);assert.equal(cactus.canonical_code,'2025_26_topps_chrome_cactus_jack_basketball');
