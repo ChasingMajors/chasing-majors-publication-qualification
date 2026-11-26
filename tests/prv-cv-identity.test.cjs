@@ -68,7 +68,7 @@ test('promotion: adding actual Sapphire CV identity changes no numerical rows in
  const records=index.map(entry=>({entry,product:JSON.parse(fs.readFileSync('data/v2/vault/products/'+entry.file))}));
  const rows=JSON.stringify(records.map(r=>r.product.rows)),sapphire=index.find(e=>e.Code==='2023_topps_chrome_sapphire_baseball');assert.ok(sapphire);
  const cvIndex=JSON.parse(fs.readFileSync('data/v1/checklists/index.json')).index;
- const out=standardize(records,cvIndex.concat([sapphire]),policy);
+ const out=standardize(records,cvIndex.filter(e=>e.Code!==sapphire.Code).concat([sapphire]),policy);
  assert.equal(out.records.length,records.length);assert.equal(JSON.stringify(out.records.map(r=>r.product.rows)),rows);
  assert.equal(out.records.find(r=>r.entry.Code===sapphire.Code).entry.cv_indexed,true);
 });
